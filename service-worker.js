@@ -1,4 +1,4 @@
-/* Manifest version: ClbJml0N */
+/* Manifest version: TxB8CIcL */
 self.importScripts('./service-worker-assets.js');
 self.addEventListener('install', event => event.waitUntil(onInstall(event)));
 self.addEventListener('activate', event => event.waitUntil(onActivate(event)));
@@ -14,8 +14,7 @@ const cacheName = `${cacheNamePrefix}${self.assetsManifest.version}`;
 const offlineAssetsInclude = [ /\.dll$/, /\.pdb$/, /\.wasm/, /\.html/, /\.js$/, /\.json$/, /\.css$/, /\.woff$/, /\.png$/, /\.jpe?g$/, /\.gif$/, /\.ico$/, /\.blat$/, /\.dat$/, /\.webmanifest$/ ];
 const offlineAssetsExclude = [ /^service-worker\.js$/ ];
 
-const base = "/";
-const baseUrl = new URL(base, self.origin);
+const baseUrl = new URL(self.registration.scope);
 const manifestUrlList = self.assetsManifest.assets.map(asset => new URL(asset.url, baseUrl).href);
 
 async function onInstall(event) {
@@ -23,7 +22,7 @@ async function onInstall(event) {
     const assetsRequests = self.assetsManifest.assets
         .filter(asset => offlineAssetsInclude.some(pattern => pattern.test(asset.url)))
         .filter(asset => !offlineAssetsExclude.some(pattern => pattern.test(asset.url)))
-        .map(asset => new Request(asset.url, { integrity: asset.hash, cache: 'no-cache' }));
+        .map(asset => new Request(new URL(asset.url, baseUrl).href, { integrity: asset.hash, cache: 'no-cache' }));
     await caches.open(cacheName).then(cache => cache.addAll(assetsRequests));
 }
 
@@ -47,17 +46,45 @@ async function onActivate(event) {
 }
 
 async function onFetch(event) {
-    let cachedResponse = null;
-    if (event.request.method === 'GET') {
-        const shouldServeIndexHtml = event.request.mode === 'navigate'
-            && !manifestUrlList.some(url => url === event.request.url);
-
-        const request = shouldServeIndexHtml ? 'index.html' : event.request;
-        const cache = await caches.open(cacheName);
-        cachedResponse = await cache.match(request);
+    if (event.request.method !== 'GET') {
+        return fetch(event.request);
     }
 
-    return cachedResponse || fetch(event.request);
+    const cache = await caches.open(cacheName);
+    const shouldServeIndexHtml = event.request.mode === 'navigate'
+        && !manifestUrlList.some(url => url === event.request.url);
+
+    if (shouldServeIndexHtml) {
+        const indexResponse = await cache.match(new URL('index.html', baseUrl).href)
+            || await cache.match('index.html');
+
+        if (indexResponse) {
+            return indexResponse;
+        }
+    }
+
+    const cachedResponse = await cache.match(event.request);
+    if (cachedResponse) {
+        return cachedResponse;
+    }
+
+    try {
+        return await fetch(event.request);
+    } catch (error) {
+        if (event.request.mode === 'navigate') {
+            const indexResponse = await cache.match(new URL('index.html', baseUrl).href)
+                || await cache.match('index.html');
+
+            if (indexResponse) {
+                return indexResponse;
+            }
+        }
+
+        return new Response('', {
+            status: 504,
+            statusText: 'Gateway Timeout'
+        });
+    }
 }
 
 async function onSync() {

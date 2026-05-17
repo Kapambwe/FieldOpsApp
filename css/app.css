@@ -3,7 +3,9 @@ html, body {
 }
 
 :root {
-    --fieldops-touch-target: 44px;
+    --fieldops-touch-target: 40px;
+    --fieldops-button-font-size: 0.78rem;
+    --fieldops-button-font-size-xs: 0.72rem;
 }
 
 h1:focus {
@@ -31,6 +33,58 @@ a, .btn-link {
 button,
 .rz-button {
     min-height: var(--fieldops-touch-target);
+}
+
+.rz-button {
+    min-height: 2rem;
+    padding: 0.32rem 0.58rem;
+    font-size: var(--fieldops-button-font-size);
+    line-height: 1.15;
+    font-weight: 600;
+    border-radius: 0.55rem;
+    gap: 0.28rem;
+}
+
+.rz-button .rz-button-text,
+.rz-button .rz-button-icon-left,
+.rz-button .rz-button-icon-right {
+    font-size: inherit;
+    line-height: 1.15;
+}
+
+.rz-button .rzi,
+.rz-button .material-icons,
+.rz-button .material-symbols-outlined {
+    font-size: 1rem;
+}
+
+.rz-size-small.rz-button,
+.rz-button.rz-size-small {
+    min-height: 1.9rem;
+    padding: 0.28rem 0.52rem;
+    font-size: var(--fieldops-button-font-size);
+}
+
+.rz-size-extra-small.rz-button,
+.rz-button.rz-size-extra-small {
+    min-height: 1.65rem;
+    padding: 0.18rem 0.38rem;
+    font-size: var(--fieldops-button-font-size-xs);
+    border-radius: 0.45rem;
+}
+
+.rz-button-icon-only,
+.rz-button.rz-button-icon-only {
+    min-width: 2rem;
+    width: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.rz-size-extra-small.rz-button-icon-only,
+.rz-button.rz-size-extra-small.rz-button-icon-only {
+    min-width: 1.65rem;
+    width: 1.65rem;
 }
 
 .valid.modified:not([type=checkbox]) {
@@ -151,7 +205,18 @@ code {
     }
 
     .rz-button {
-        width: 100%;
+        min-height: var(--fieldops-touch-target);
+        font-size: var(--fieldops-button-font-size);
+    }
+
+    .rz-toolbar .rz-button,
+    .rz-button.rz-button-icon-only,
+    .rz-size-extra-small.rz-button {
+        width: auto;
+    }
+
+    .rz-card > .rz-stack .rz-button:not(.rz-button-icon-only) {
+        max-width: 100%;
     }
 
     .rz-row {
