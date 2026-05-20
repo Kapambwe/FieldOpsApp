@@ -1,0 +1,15 @@
+[
+  {
+    "id": "za-voter-anc-1",
+    "voterId": 2001001,
+    "firstName": "Sipho",
+    "lastName": "Dlamini",
+    "phoneNumber": "+27 71 000 0001",
+    "address": "Section C, Soweto",
+    "ward": "Ward 45",
+    "constituency": "Johannesburg",
+    "pollingStationName": "Soweto Community Hall",
+    "supportLevel": "Strong Supporter",
+    "syncStatus": "Synced"
+  }
+]

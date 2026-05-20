@@ -1,0 +1,53 @@
+[
+  {
+    "id": "da-get-sa-working",
+    "name": "DA: Rescue South Africa",
+    "objective": "Mobilize voters around ending load shedding and creating a job-friendly environment.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "WardOnly",
+    "mainMessage": "A government that works: Ending load shedding, creating jobs, and delivering services for all South Africans.",
+    "talkingPoints": [
+      "Ending Load Shedding: Privatizing energy and bringing in independent power producers.",
+      "Job Creation: Cutting red tape for small businesses and scrapping race-based policies (BEE).",
+      "Safe Communities: Professionalizing the police and giving more power to local law enforcement.",
+      "Proven Governance: The DA-led Western Cape model of clean audits and delivery."
+    ],
+    "questions": [
+      {
+        "id": "da-q1",
+        "campaignId": "da-get-sa-working",
+        "displayOrder": 1,
+        "prompt": "How many hours of load shedding did you experience in the last 24 hours?",
+        "questionType": "Numeric",
+        "isRequired": true
+      },
+      {
+        "id": "da-q2",
+        "campaignId": "da-get-sa-working",
+        "displayOrder": 2,
+        "prompt": "Do you believe your local municipality is delivering quality services?",
+        "questionType": "YesNo",
+        "isRequired": true
+      },
+      {
+        "id": "da-q3",
+        "campaignId": "da-get-sa-working",
+        "displayOrder": 3,
+        "prompt": "Will you support the DA to rescue South Africa from economic collapse?",
+        "questionType": "SingleChoice",
+        "isRequired": true,
+        "isOutcomeQuestion": true,
+        "options": [
+          { "value": "Strong Supporter", "label": "Yes, Definitely" },
+          { "value": "Leaning Support", "label": "Likely" },
+          { "value": "Undecided", "label": "Undecided" },
+          { "value": "Leaning Opposition", "label": "No" },
+          { "value": "Strong Opposition", "label": "Never" }
+        ]
+      }
+    ],
+    "syncStatus": "Synced",
+    "lastModified": "2026-05-19T13:00:00Z"
+  }
+]

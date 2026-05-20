@@ -1,0 +1,15 @@
+[
+  {
+    "id": "za-voter-da-1",
+    "voterId": 2002001,
+    "firstName": "Helen",
+    "lastName": "Botha",
+    "phoneNumber": "+27 82 111 2222",
+    "address": "12 Oak Street, Stellenbosch",
+    "ward": "Ward 5",
+    "constituency": "Stellenbosch",
+    "pollingStationName": "Stellenbosch Library",
+    "supportLevel": "Strong Supporter",
+    "syncStatus": "Synced"
+  }
+]

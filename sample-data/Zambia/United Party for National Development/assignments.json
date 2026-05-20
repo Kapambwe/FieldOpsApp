@@ -1,0 +1,14 @@
+[
+  {
+    "id": "zm-assignment-upnd-1",
+    "campaignId": "upnd-free-edu-tour",
+    "campaignName": "UPND Free Education & CDF Tour",
+    "ward": "Ward 1",
+    "constituency": "Lusaka Central",
+    "targetContacts": 50,
+    "completedContacts": 12,
+    "status": "In Progress",
+    "priority": "High",
+    "syncStatus": "Synced"
+  }
+]

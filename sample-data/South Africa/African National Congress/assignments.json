@@ -1,0 +1,14 @@
+[
+  {
+    "id": "za-assignment-anc-1",
+    "campaignId": "anc-social-renewal",
+    "campaignName": "ANC: Social Renewal & The NHI",
+    "ward": "Ward 45",
+    "constituency": "Johannesburg",
+    "targetContacts": 30,
+    "completedContacts": 5,
+    "status": "In Progress",
+    "priority": "Medium",
+    "syncStatus": "Synced"
+  }
+]

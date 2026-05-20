@@ -1,0 +1,14 @@
+[
+  {
+    "id": "za-assignment-da-1",
+    "campaignId": "da-get-sa-working",
+    "campaignName": "DA: Rescue South Africa",
+    "ward": "Ward 5",
+    "constituency": "Stellenbosch",
+    "targetContacts": 20,
+    "completedContacts": 0,
+    "status": "Pending",
+    "priority": "High",
+    "syncStatus": "Synced"
+  }
+]

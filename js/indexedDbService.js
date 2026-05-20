@@ -14,7 +14,9 @@ const STORE_SCHEMAS = [
     { name: 'photos', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'resultId', keyPath: 'resultId' }] },
     { name: 'metadata', keyPath: 'key' },
     { name: 'parties', keyPath: 'partyId' },
-    { name: 'polling_stations', keyPath: 'stationId' }
+    { name: 'polling_stations', keyPath: 'stationId' },
+    { name: 'blobs', keyPath: 'id' },
+    { name: 'drafts', keyPath: 'id' }
 ];
 
 let dbInstance = null;
@@ -241,4 +243,80 @@ export async function updateSyncQueueRetry(id, error) {
         tx.oncomplete = () => resolve(true);
         tx.onerror = () => reject(tx.error);
     });
+}
+export async function putBlob(storeName, id, data, contentType) {
+    const db = await openDb();
+    const blob = new Blob([data], { type: contentType });
+    const tx = db.transaction(storeName, 'readwrite');
+    const store = tx.objectStore(storeName);
+    return new Promise((resolve, reject) => {
+        const request = store.put({ id, data: blob, contentType, timestamp: Date.now() });
+        request.onsuccess = () => resolve(true);
+        request.onerror = () => reject(request.error);
+    });
+}
+
+export async function getBlob(storeName, id) {
+    const db = await openDb();
+    return new Promise((resolve, reject) => {
+        const tx = db.transaction(storeName, 'readonly');
+        const store = tx.objectStore(storeName);
+        const request = store.get(id);
+        request.onsuccess = async () => {
+            if (request.result && request.result.data instanceof Blob) {
+                const arrayBuffer = await request.result.data.arrayBuffer();
+                resolve(new Uint8Array(arrayBuffer));
+            } else {
+                resolve(null);
+            }
+        };
+        request.onerror = () => reject(request.error);
+    });
+}
+
+export async function getByProperty(storeName, propertyName, value) {
+    const db = await openDb();
+    return new Promise((resolve, reject) => {
+        const tx = db.transaction(storeName, 'readonly');
+        const store = tx.objectStore(storeName);
+        
+        // Try index first
+        try {
+            const index = store.index(propertyName);
+            const request = index.getAll(value);
+            request.onsuccess = () => resolve(request.result || []);
+            request.onerror = () => reject(request.error);
+        } catch (e) {
+            // Fallback to manual filter if no index
+            const request = store.openCursor();
+            const results = [];
+            request.onsuccess = (event) => {
+                const cursor = event.target.result;
+                if (cursor) {
+                    if (cursor.value[propertyName] === value) {
+                        results.push(cursor.value);
+                    }
+                    cursor.continue();
+                } else {
+                    resolve(results);
+                }
+            };
+            request.onerror = () => reject(request.error);
+        }
+    });
+}
+
+export async function getApproximateUsage() {
+    if (navigator.storage && navigator.storage.estimate) {
+        const estimate = await navigator.storage.estimate();
+        return estimate.usage || 0;
+    }
+    return 0;
+}
+
+export async function vacuum() {
+    // IndexedDB doesn't have a direct VACUUM, but we can clear and potentially re-populate
+    // This is a placeholder for more complex logic if needed.
+    console.log('Vacuum requested - not implemented for IndexedDB standard');
+    return true;
 }

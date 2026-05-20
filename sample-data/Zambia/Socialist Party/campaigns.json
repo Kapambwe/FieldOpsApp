@@ -1,0 +1,53 @@
+[
+  {
+    "id": "sp-justice-tour",
+    "name": "Socialist Party: Justice, Equity and Peace",
+    "objective": "Mobilize the poor and working class around healthcare and labor rights.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "WardOnly",
+    "mainMessage": "A Zambia for the many, not the few: Fighting for real healthcare and living wages.",
+    "talkingPoints": [
+      "Healthcare Crisis: Medicines must be in clinics, not just in pharmacies.",
+      "Worker Rights: Ending casualization and ensuring a living wage.",
+      "Peasant Farmer Support: Direct fertilizer subsidies for the small-scale farmer.",
+      "Socialist Vision: National resources must benefit the people, not foreign companies."
+    ],
+    "questions": [
+      {
+        "id": "sp-q1",
+        "campaignId": "sp-justice-tour",
+        "displayOrder": 1,
+        "prompt": "When you last visited the clinic, did you find the medicine you needed?",
+        "questionType": "YesNo",
+        "isRequired": true
+      },
+      {
+        "id": "sp-q2",
+        "campaignId": "sp-justice-tour",
+        "displayOrder": 2,
+        "prompt": "Do you believe the current government is doing enough for the working class?",
+        "questionType": "YesNo",
+        "isRequired": true
+      },
+      {
+        "id": "sp-q3",
+        "campaignId": "sp-justice-tour",
+        "displayOrder": 3,
+        "prompt": "Will you support the Socialist Party to bring real equity to Zambia?",
+        "questionType": "SingleChoice",
+        "isRequired": true,
+        "isOutcomeQuestion": true,
+        "options": [
+          { "value": "Strong Supporter", "label": "Yes, I believe in Justice" },
+          { "value": "Leaning Support", "label": "Likely" },
+          { "value": "Undecided", "label": "Undecided" },
+          { "value": "Leaning Opposition", "label": "No" },
+          { "value": "Strong Opposition", "label": "Never" }
+        ]
+      }
+    ],
+    "syncStatus": "Synced",
+    "lastModified": "2026-05-19T14:00:00Z"
+  }
+]

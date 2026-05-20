@@ -1,0 +1,53 @@
+[
+  {
+    "id": "anc-social-renewal",
+    "name": "ANC: Social Renewal & The NHI",
+    "objective": "Inform citizens about the National Health Insurance (NHI) and secure support for social grant expansion.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "WardOnly",
+    "mainMessage": "Working together to build a better life: Protecting our democracy through social security and universal healthcare.",
+    "talkingPoints": [
+      "NHI: Quality healthcare for all, not just those who can afford medical aid.",
+      "Social Grants: Expanding the safety net for the unemployed and vulnerable.",
+      "Title Deeds: Accelerating the delivery of housing and land ownership.",
+      "Industrialization: Creating jobs through local manufacturing and green energy."
+    ],
+    "questions": [
+      {
+        "id": "anc-q1",
+        "campaignId": "anc-social-renewal",
+        "displayOrder": 1,
+        "prompt": "Are you or your family currently receiving any social grants?",
+        "questionType": "YesNo",
+        "isRequired": true
+      },
+      {
+        "id": "anc-q2",
+        "campaignId": "anc-social-renewal",
+        "displayOrder": 2,
+        "prompt": "What is the biggest service delivery challenge in this ward (Electricity, Water, Safety)?",
+        "questionType": "FreeText",
+        "isRequired": false
+      },
+      {
+        "id": "anc-q3",
+        "campaignId": "anc-social-renewal",
+        "displayOrder": 3,
+        "prompt": "Will you support the ANC to continue its mandate of social transformation?",
+        "questionType": "SingleChoice",
+        "isRequired": true,
+        "isOutcomeQuestion": true,
+        "options": [
+          { "value": "Strong Supporter", "label": "Strongly Supportive" },
+          { "value": "Leaning Support", "label": "Supportive" },
+          { "value": "Undecided", "label": "Undecided" },
+          { "value": "Leaning Opposition", "label": "Opposing" },
+          { "value": "Strong Opposition", "label": "Strongly Opposing" }
+        ]
+      }
+    ],
+    "syncStatus": "Synced",
+    "lastModified": "2026-05-19T12:00:00Z"
+  }
+]

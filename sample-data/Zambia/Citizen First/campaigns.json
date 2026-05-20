@@ -1,0 +1,53 @@
+[
+  {
+    "id": "cf-zambians-first",
+    "name": "Citizen First: Putting Zambians First",
+    "objective": "Promote national unity and economic sovereignty for all citizens.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "WardOnly",
+    "mainMessage": "Our resources, our people: Putting the Zambian citizen at the center of all development.",
+    "talkingPoints": [
+      "Economic Sovereignty: Priority for Zambian contractors and suppliers.",
+      "National Unity: Unity across all 73 tribes, merit-based appointments.",
+      "Land Ownership: Protecting land for the local people.",
+      "Mining Reform: Ensuring local communities benefit directly from mine royalties."
+    ],
+    "questions": [
+      {
+        "id": "cf-q1",
+        "campaignId": "cf-zambians-first",
+        "displayOrder": 1,
+        "prompt": "Do you believe local Zambian businesses are getting enough opportunities?",
+        "questionType": "YesNo",
+        "isRequired": true
+      },
+      {
+        "id": "cf-q2",
+        "campaignId": "cf-zambians-first",
+        "displayOrder": 2,
+        "prompt": "Which national issue concerns you most right now?",
+        "questionType": "FreeText",
+        "isRequired": false
+      },
+      {
+        "id": "cf-q3",
+        "campaignId": "cf-zambians-first",
+        "displayOrder": 3,
+        "prompt": "Will you support Citizen First to bring a new direction to our nation?",
+        "questionType": "SingleChoice",
+        "isRequired": true,
+        "isOutcomeQuestion": true,
+        "options": [
+          { "value": "Strong Supporter", "label": "Yes, Definitely" },
+          { "value": "Leaning Support", "label": "Likely" },
+          { "value": "Undecided", "label": "Undecided" },
+          { "value": "Leaning Opposition", "label": "No" },
+          { "value": "Strong Opposition", "label": "Never" }
+        ]
+      }
+    ],
+    "syncStatus": "Synced",
+    "lastModified": "2026-05-19T15:00:00Z"
+  }
+]
