@@ -1,5 +1,5 @@
 const DB_NAME = 'FieldOpsDb';
-const DB_VERSION = 3;
+const DB_VERSION = 4;
 
 const STORE_SCHEMAS = [
     { 
@@ -65,6 +65,7 @@ export async function initializeDb() {
 
 export async function getById(storeName, id) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains(storeName)) return null;
     return new Promise((resolve, reject) => {
         const tx = db.transaction(storeName, 'readonly');
         const store = tx.objectStore(storeName);
@@ -76,6 +77,7 @@ export async function getById(storeName, id) {
 
 export async function getAll(storeName) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains(storeName)) return [];
     return new Promise((resolve, reject) => {
         const tx = db.transaction(storeName, 'readonly');
         const store = tx.objectStore(storeName);
@@ -87,6 +89,10 @@ export async function getAll(storeName) {
 
 export async function put(storeName, value) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains(storeName)) {
+        console.warn(`Attempted to put into non-existent store: ${storeName}`);
+        return false;
+    }
     return new Promise((resolve, reject) => {
         const tx = db.transaction(storeName, 'readwrite');
         const store = tx.objectStore(storeName);
@@ -98,6 +104,7 @@ export async function put(storeName, value) {
 
 export async function remove(storeName, id) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains(storeName)) return false;
     return new Promise((resolve, reject) => {
         const tx = db.transaction(storeName, 'readwrite');
         const store = tx.objectStore(storeName);
@@ -109,13 +116,19 @@ export async function remove(storeName, id) {
 
 export async function getByIndex(storeName, indexName, value) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains(storeName)) return [];
     return new Promise((resolve, reject) => {
         const tx = db.transaction(storeName, 'readonly');
         const store = tx.objectStore(storeName);
-        const index = store.index(indexName);
-        const request = index.getAll(value);
-        request.onsuccess = () => resolve(request.result || []);
-        request.onerror = () => reject(request.error);
+        try {
+            const index = store.index(indexName);
+            const request = index.getAll(value);
+            request.onsuccess = () => resolve(request.result || []);
+            request.onerror = () => reject(request.error);
+        } catch (e) {
+            console.error(`Index ${indexName} not found in store ${storeName}`);
+            resolve([]);
+        }
     });
 }
 
@@ -128,6 +141,10 @@ export async function getAllPendingSync() {
     const result = {};
     const stores = ['voters', 'contacts', 'election_results', 'photos', 'campaigns', 'campaign_assignments', 'campaign_responses', 'follow_up_tasks', 'observer_incidents'];
     for (const store of stores) {
+        if (!db.objectStoreNames.contains(store)) {
+            result[store] = { pendingCreate: [], pendingUpdate: [], pendingDelete: [] };
+            continue;
+        }
         const items = await getBySyncStatus(store, 'PendingCreate');
         const updates = await getBySyncStatus(store, 'PendingUpdate');
         const deletes = await getBySyncStatus(store, 'PendingDelete');
@@ -137,12 +154,15 @@ export async function getAllPendingSync() {
 }
 
 export async function countBySyncStatus(storeName, status) {
+    const db = await openDb();
+    if (!db.objectStoreNames.contains(storeName)) return 0;
     const items = await getBySyncStatus(storeName, status);
     return items.length;
 }
 
 export async function getMetadata(key) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains('metadata')) return null;
     return new Promise((resolve, reject) => {
         const tx = db.transaction('metadata', 'readonly');
         const store = tx.objectStore('metadata');
@@ -154,6 +174,7 @@ export async function getMetadata(key) {
 
 export async function setMetadata(key, value) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains('metadata')) return false;
     return new Promise((resolve, reject) => {
         const tx = db.transaction('metadata', 'readwrite');
         const store = tx.objectStore('metadata');
@@ -165,6 +186,7 @@ export async function setMetadata(key, value) {
 
 export async function clearStore(storeName) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains(storeName)) return true; // Already "clear" if it doesn't exist
     return new Promise((resolve, reject) => {
         const tx = db.transaction(storeName, 'readwrite');
         const store = tx.objectStore(storeName);
@@ -176,6 +198,7 @@ export async function clearStore(storeName) {
 
 export async function bulkPut(storeName, items) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains(storeName)) return 0;
     return new Promise((resolve, reject) => {
         const tx = db.transaction(storeName, 'readwrite');
         const store = tx.objectStore(storeName);
@@ -207,6 +230,8 @@ export async function getStoreCounts() {
 }
 
 export async function enqueueSync(storeName, recordId, operation, payloadJson) {
+    const db = await openDb();
+    if (!db.objectStoreNames.contains('sync_queue')) return null;
     const item = {
         id: crypto.randomUUID(),
         storeName,
@@ -224,6 +249,7 @@ export async function enqueueSync(storeName, recordId, operation, payloadJson) {
 
 export async function dequeueSyncBatch(batchSize = 50) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains('sync_queue')) return [];
     return new Promise((resolve, reject) => {
         const tx = db.transaction('sync_queue', 'readonly');
         const store = tx.objectStore('sync_queue');
@@ -240,6 +266,7 @@ export async function removeSyncQueueItem(id) {
 
 export async function updateSyncQueueRetry(id, error) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains('sync_queue')) return false;
     return new Promise((resolve, reject) => {
         const tx = db.transaction('sync_queue', 'readwrite');
         const store = tx.objectStore('sync_queue');
@@ -259,6 +286,7 @@ export async function updateSyncQueueRetry(id, error) {
 }
 export async function putBlob(storeName, id, data, contentType) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains(storeName)) return false;
     const blob = new Blob([data], { type: contentType });
     const tx = db.transaction(storeName, 'readwrite');
     const store = tx.objectStore(storeName);
@@ -271,6 +299,7 @@ export async function putBlob(storeName, id, data, contentType) {
 
 export async function getBlob(storeName, id) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains(storeName)) return null;
     return new Promise((resolve, reject) => {
         const tx = db.transaction(storeName, 'readonly');
         const store = tx.objectStore(storeName);
@@ -289,6 +318,7 @@ export async function getBlob(storeName, id) {
 
 export async function getByProperty(storeName, propertyName, value) {
     const db = await openDb();
+    if (!db.objectStoreNames.contains(storeName)) return [];
     return new Promise((resolve, reject) => {
         const tx = db.transaction(storeName, 'readonly');
         const store = tx.objectStore(storeName);
