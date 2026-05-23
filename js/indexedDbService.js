@@ -1,8 +1,19 @@
 const DB_NAME = 'FieldOpsDb';
-const DB_VERSION = 2;
+const DB_VERSION = 3;
 
 const STORE_SCHEMAS = [
-    { name: 'voters', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'ward', keyPath: 'ward' }, { name: 'constituency', keyPath: 'constituency' }] },
+    { 
+        name: 'voters', 
+        keyPath: 'id', 
+        indexes: [
+            { name: 'syncStatus', keyPath: 'syncStatus' }, 
+            { name: 'ward', keyPath: 'ward' }, 
+            { name: 'constituency', keyPath: 'constituency' },
+            { name: 'phoneNumber', keyPath: 'phoneNumber' },
+            { name: 'lastName', keyPath: 'lastName' },
+            { name: 'fullName', keyPath: 'fullName' }
+        ] 
+    },
     { name: 'contacts', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'voterId', keyPath: 'voterId' }, { name: 'agentId', keyPath: 'agentId' }] },
     { name: 'election_results', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'agentId', keyPath: 'agentId' }, { name: 'pollingStationId', keyPath: 'pollingStationId' }] },
     { name: 'candidate_votes', keyPath: 'id', indexes: [{ name: 'resultId', keyPath: 'resultId' }] },
@@ -10,13 +21,15 @@ const STORE_SCHEMAS = [
     { name: 'campaign_assignments', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'campaignId', keyPath: 'campaignId' }, { name: 'volunteerId', keyPath: 'volunteerId' }, { name: 'status', keyPath: 'status' }] },
     { name: 'campaign_responses', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'campaignId', keyPath: 'campaignId' }, { name: 'assignmentId', keyPath: 'assignmentId' }, { name: 'voterId', keyPath: 'voterId' }, { name: 'agentId', keyPath: 'agentId' }] },
     { name: 'follow_up_tasks', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'campaignId', keyPath: 'campaignId' }, { name: 'voterId', keyPath: 'voterId' }, { name: 'assignedToAgentId', keyPath: 'assignedToAgentId' }, { name: 'status', keyPath: 'status' }] },
+    { name: 'observer_incidents', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'incidentType', keyPath: 'incidentType' }, { name: 'observerName', keyPath: 'observerName' }, { name: 'stationName', keyPath: 'stationName' }, { name: 'assignedArea', keyPath: 'assignedArea' }, { name: 'createdAt', keyPath: 'incidentAt' }] },
     { name: 'sync_queue', keyPath: 'id', indexes: [{ name: 'storeName', keyPath: 'storeName' }, { name: 'createdAt', keyPath: 'createdAt' }] },
     { name: 'photos', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'resultId', keyPath: 'resultId' }] },
     { name: 'metadata', keyPath: 'key' },
     { name: 'parties', keyPath: 'partyId' },
     { name: 'polling_stations', keyPath: 'stationId' },
     { name: 'blobs', keyPath: 'id' },
-    { name: 'drafts', keyPath: 'id' }
+    { name: 'drafts', keyPath: 'id' },
+    { name: 'audit_logs', keyPath: 'id', indexes: [{ name: 'timestamp', keyPath: 'timestamp' }] }
 ];
 
 let dbInstance = null;
@@ -113,7 +126,7 @@ export async function getBySyncStatus(storeName, status) {
 export async function getAllPendingSync() {
     const db = await openDb();
     const result = {};
-    const stores = ['voters', 'contacts', 'election_results', 'photos', 'campaigns', 'campaign_assignments', 'campaign_responses', 'follow_up_tasks'];
+    const stores = ['voters', 'contacts', 'election_results', 'photos', 'campaigns', 'campaign_assignments', 'campaign_responses', 'follow_up_tasks', 'observer_incidents'];
     for (const store of stores) {
         const items = await getBySyncStatus(store, 'PendingCreate');
         const updates = await getBySyncStatus(store, 'PendingUpdate');
@@ -178,7 +191,7 @@ export async function bulkPut(storeName, items) {
 
 export async function getStoreCounts() {
     const db = await openDb();
-    const stores = ['voters', 'contacts', 'election_results', 'photos', 'campaigns', 'campaign_assignments', 'campaign_responses', 'follow_up_tasks', 'sync_queue'];
+    const stores = ['voters', 'contacts', 'election_results', 'photos', 'campaigns', 'campaign_assignments', 'campaign_responses', 'follow_up_tasks', 'observer_incidents', 'sync_queue'];
     const counts = {};
     for (const name of stores) {
         if (!db.objectStoreNames.contains(name)) { counts[name] = 0; continue; }
@@ -312,6 +325,46 @@ export async function getApproximateUsage() {
         return estimate.usage || 0;
     }
     return 0;
+}
+
+export async function getStorageEstimate() {
+    if (navigator.storage && navigator.storage.estimate) {
+        const estimate = await navigator.storage.estimate();
+        return {
+            usage: estimate.usage || 0,
+            quota: estimate.quota || 0,
+            percent: estimate.quota ? (estimate.usage / estimate.quota * 100) : 0
+        };
+    }
+    return { usage: 0, quota: 0, percent: 0 };
+}
+
+export async function searchVoters(query) {
+    const db = await openDb();
+    const tx = db.transaction('voters', 'readonly');
+    const store = tx.objectStore('voters');
+    const results = [];
+    const q = query.toLowerCase();
+
+    return new Promise((resolve, reject) => {
+        const request = store.openCursor();
+        request.onsuccess = (event) => {
+            const cursor = event.target.result;
+            if (cursor) {
+                const voter = cursor.value;
+                if (voter.fullName.toLowerCase().includes(q) || 
+                    voter.phoneNumber.includes(q) || 
+                    voter.address.toLowerCase().includes(q)) {
+                    results.push(voter);
+                }
+                if (results.length >= 100) resolve(results); // Cap at 100 for perf
+                cursor.continue();
+            } else {
+                resolve(results);
+            }
+        };
+        request.onerror = () => reject(request.error);
+    });
 }
 
 export async function vacuum() {

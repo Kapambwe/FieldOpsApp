@@ -1,0 +1,39 @@
+{
+  "contactOutcomes": [
+    { "code": "Contacted", "text": "Contacted" },
+    { "code": "Not Home", "text": "Not Home" },
+    { "code": "Refused", "text": "Refused" },
+    { "code": "Moved", "text": "Moved" },
+    { "code": "Wrong Number", "text": "Wrong Number" }
+  ],
+  "supportLevels": [
+    { "code": "Strong Supporter", "text": "Strong Supporter" },
+    { "code": "Leaning Support", "text": "Leaning Support" },
+    { "code": "Undecided", "text": "Undecided" },
+    { "code": "Leaning Opposition", "text": "Leaning Opposition" },
+    { "code": "Strong Opposition", "text": "Strong Opposition" }
+  ],
+  "issueOptions": [
+    "Water",
+    "Roads",
+    "Electricity",
+    "Healthcare",
+    "Education",
+    "Jobs",
+    "Agriculture",
+    "Housing",
+    "Security",
+    "Sanitation"
+  ],
+  "captureLocationTypeOptions": [
+    { "code": "PollingStation", "text": "Polling Station" },
+    { "code": "AggregationCenter", "text": "Aggregation Center" }
+  ],
+  "statusFilters": [
+    { "code": "All", "text": "All" },
+    { "code": "Open", "text": "Open" },
+    { "code": "In Progress", "text": "In Progress" },
+    { "code": "Completed", "text": "Completed" },
+    { "code": "Cancelled", "text": "Cancelled" }
+  ]
+}

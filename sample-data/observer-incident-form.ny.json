@@ -1,0 +1,163 @@
+{
+  "formId": "observer-incident-form",
+  "title": "Observer Incident Log - Nyanja",
+  "description": "Lembani mavuto a pa site, onjezani umboni, ndi kusunga lipoti mu chipangizo kuti lizigwirizanitsidwa.",
+  "submitButtonText": "Save Incident",
+  "sections": [
+    {
+      "title": "Observer Details",
+      "description": "Who is filing this report?",
+      "fields": [
+        {
+          "key": "observerName",
+          "label": "Observer Name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Full name"
+        },
+        {
+          "key": "organization",
+          "label": "Organization",
+          "type": "text",
+          "required": true,
+          "placeholder": "Organization or mission"
+        },
+        {
+          "key": "accreditationNumber",
+          "label": "Accreditation Number",
+          "type": "text",
+          "required": true,
+          "placeholder": "Observer accreditation number"
+        },
+        {
+          "key": "observerType",
+          "label": "Observer Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            { "value": "Domestic", "label": "Domestic" },
+            { "value": "International", "label": "International" },
+            { "value": "Party", "label": "Party" },
+            { "value": "Civil Society", "label": "Civil Society" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Station Assignment",
+      "description": "Where did the incident happen?",
+      "fields": [
+        {
+          "key": "assignedArea",
+          "label": "Assigned Region or Area",
+          "type": "text",
+          "required": true,
+          "placeholder": "Region, district, ward, or area"
+        },
+        {
+          "key": "stationCode",
+          "label": "Station Code",
+          "type": "text",
+          "placeholder": "Optional station code"
+        },
+        {
+          "key": "stationName",
+          "label": "Station or Centre Name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Polling station or tally centre name"
+        },
+        {
+          "key": "incidentAt",
+          "label": "Incident Time",
+          "type": "datetime-local",
+          "required": true,
+          "placeholder": "YYYY-MM-DD HH:MM"
+        }
+      ]
+    },
+    {
+      "title": "Incident",
+      "description": "Describe what happened and what needs attention.",
+      "fields": [
+        {
+          "key": "incidentType",
+          "label": "Incident Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            { "value": "late_opening", "label": "Late Opening" },
+            { "value": "missing_materials", "label": "Missing Materials" },
+            { "value": "intimidation", "label": "Intimidation" },
+            { "value": "queue_issues", "label": "Queue Issues" },
+            { "value": "result_delay", "label": "Result Delay" },
+            { "value": "station_disruption", "label": "Station Disruption" },
+            { "value": "other", "label": "Other" }
+          ]
+        },
+        {
+          "key": "severity",
+          "label": "Severity",
+          "type": "select",
+          "required": true,
+          "options": [
+            { "value": "Low", "label": "Low" },
+            { "value": "Medium", "label": "Medium" },
+            { "value": "High", "label": "High" },
+            { "value": "Critical", "label": "Critical" }
+          ]
+        },
+        {
+          "key": "title",
+          "label": "Short Title",
+          "type": "text",
+          "required": true,
+          "placeholder": "One-line summary"
+        },
+        {
+          "key": "description",
+          "label": "Details",
+          "type": "textarea",
+          "required": true,
+          "rows": 5,
+          "placeholder": "Describe the incident in plain language."
+        },
+        {
+          "key": "resolvedBeforeLeaving",
+          "label": "Resolved Before Leaving",
+          "type": "checkbox"
+        },
+        {
+          "key": "followUpAction",
+          "label": "Recommended Follow-up",
+          "type": "select",
+          "options": [
+            { "value": "Notify election manager", "label": "Notify election manager" },
+            { "value": "Escalate to operations", "label": "Escalate to operations" },
+            { "value": "Log and monitor", "label": "Log and monitor" },
+            { "value": "Request security support", "label": "Request security support" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Evidence",
+      "description": "Attach an optional photo and add notes about the evidence.",
+      "fields": [
+        {
+          "key": "evidencePhoto",
+          "label": "Evidence Photo",
+          "type": "file",
+          "placeholder": "Choose a photo"
+        },
+        {
+          "key": "evidenceNotes",
+          "label": "Evidence Notes",
+          "type": "textarea",
+          "rows": 3,
+          "placeholder": "What does the photo show?"
+        }
+      ]
+    }
+  ]
+}

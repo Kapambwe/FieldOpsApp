@@ -1,0 +1,163 @@
+{
+  "formId": "observer-incident-form",
+  "title": "Journal des incidents d'observation",
+  "description": "Enregistrez les incidents de bureau, joignez des preuves et sauvegardez le rapport localement pour la synchronisation.",
+  "submitButtonText": "Enregistrer l'incident",
+  "sections": [
+    {
+      "title": "Coordonnees de l'observateur",
+      "description": "Qui remplit ce rapport ?",
+      "fields": [
+        {
+          "key": "observerName",
+          "label": "Nom de l'observateur",
+          "type": "text",
+          "required": true,
+          "placeholder": "Nom complet"
+        },
+        {
+          "key": "organization",
+          "label": "Organisation",
+          "type": "text",
+          "required": true,
+          "placeholder": "Organisation ou mission"
+        },
+        {
+          "key": "accreditationNumber",
+          "label": "Numero d'accreditation",
+          "type": "text",
+          "required": true,
+          "placeholder": "Numero d'accreditation de l'observateur"
+        },
+        {
+          "key": "observerType",
+          "label": "Type d'observateur",
+          "type": "select",
+          "required": true,
+          "options": [
+            { "value": "Domestic", "label": "National" },
+            { "value": "International", "label": "International" },
+            { "value": "Party", "label": "Parti" },
+            { "value": "Civil Society", "label": "Societe civile" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Affectation du bureau",
+      "description": "Où l'incident s'est-il produit ?",
+      "fields": [
+        {
+          "key": "assignedArea",
+          "label": "Region ou zone attribuee",
+          "type": "text",
+          "required": true,
+          "placeholder": "Region, district, circonscription ou zone"
+        },
+        {
+          "key": "stationCode",
+          "label": "Code du bureau",
+          "type": "text",
+          "placeholder": "Code facultatif du bureau"
+        },
+        {
+          "key": "stationName",
+          "label": "Nom du bureau ou du centre",
+          "type": "text",
+          "required": true,
+          "placeholder": "Nom du bureau de vote ou du centre de compilation"
+        },
+        {
+          "key": "incidentAt",
+          "label": "Heure de l'incident",
+          "type": "datetime-local",
+          "required": true,
+          "placeholder": "AAAA-MM-JJ HH:MM"
+        }
+      ]
+    },
+    {
+      "title": "Incident",
+      "description": "Decrivez ce qui s'est passe et ce qui demande une attention.",
+      "fields": [
+        {
+          "key": "incidentType",
+          "label": "Type d'incident",
+          "type": "select",
+          "required": true,
+          "options": [
+            { "value": "late_opening", "label": "Ouverture tardive" },
+            { "value": "missing_materials", "label": "Materiels manquants" },
+            { "value": "intimidation", "label": "Intimidation" },
+            { "value": "queue_issues", "label": "Problemes de queue" },
+            { "value": "result_delay", "label": "Retard des resultats" },
+            { "value": "station_disruption", "label": "Perturbation du bureau" },
+            { "value": "other", "label": "Autre" }
+          ]
+        },
+        {
+          "key": "severity",
+          "label": "Gravite",
+          "type": "select",
+          "required": true,
+          "options": [
+            { "value": "Low", "label": "Faible" },
+            { "value": "Medium", "label": "Moyenne" },
+            { "value": "High", "label": "Elevee" },
+            { "value": "Critical", "label": "Critique" }
+          ]
+        },
+        {
+          "key": "title",
+          "label": "Titre court",
+          "type": "text",
+          "required": true,
+          "placeholder": "Resume en une ligne"
+        },
+        {
+          "key": "description",
+          "label": "Details",
+          "type": "textarea",
+          "required": true,
+          "rows": 5,
+          "placeholder": "Decrivez l'incident en langage simple."
+        },
+        {
+          "key": "resolvedBeforeLeaving",
+          "label": "Resolue avant le depart",
+          "type": "checkbox"
+        },
+        {
+          "key": "followUpAction",
+          "label": "Suite recommandee",
+          "type": "select",
+          "options": [
+            { "value": "Notify election manager", "label": "Informer le responsable electoral" },
+            { "value": "Escalate to operations", "label": "Escalader aux operations" },
+            { "value": "Log and monitor", "label": "Enregistrer et surveiller" },
+            { "value": "Request security support", "label": "Demander un appui securitaire" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Preuves",
+      "description": "Joignez une photo facultative et ajoutez des notes sur les preuves.",
+      "fields": [
+        {
+          "key": "evidencePhoto",
+          "label": "Photo de preuve",
+          "type": "file",
+          "placeholder": "Choisissez une photo"
+        },
+        {
+          "key": "evidenceNotes",
+          "label": "Notes sur la preuve",
+          "type": "textarea",
+          "rows": 3,
+          "placeholder": "Que montre la photo ?"
+        }
+      ]
+    }
+  ]
+}

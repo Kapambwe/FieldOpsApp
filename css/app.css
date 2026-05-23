@@ -8,6 +8,109 @@ html, body {
     --fieldops-button-font-size-xs: 0.72rem;
 }
 
+html.fieldops-large-text {
+    font-size: 112.5%;
+}
+
+html.fieldops-large-text .rz-button {
+    min-height: 2.35rem;
+}
+
+html.fieldops-large-text .fieldops-toolbar {
+    padding: 0.35rem;
+}
+
+html.fieldops-large-text .rz-header,
+html.fieldops-large-text .rz-content {
+    line-height: 1.5;
+}
+
+html.fieldops-tally-mode body {
+    background: #020617;
+}
+
+html.fieldops-tally-mode .fieldops-election-day {
+    color: #f8fafc;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-text,
+html.fieldops-tally-mode .fieldops-election-day .rz-text span,
+html.fieldops-tally-mode .fieldops-election-day label {
+    color: #e2e8f0;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-card {
+    background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+    color: #f8fafc;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    box-shadow: 0 18px 48px rgba(2, 6, 23, 0.42);
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-card .rz-text {
+    color: inherit;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-button {
+    border-color: rgba(148, 163, 184, 0.5);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-button.rz-button-light {
+    background: #1e293b;
+    color: #f8fafc;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-button.rz-button-secondary {
+    background: #334155;
+    color: #f8fafc;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-button.rz-button-primary {
+    background: #f8fafc;
+    color: #0f172a;
+    border-color: #f8fafc;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-button.rz-button-warning {
+    background: #f59e0b;
+    color: #111827;
+    border-color: #f59e0b;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-button.rz-button-info {
+    background: #0ea5e9;
+    color: #082f49;
+    border-color: #0ea5e9;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-button.rz-button-danger {
+    background: #ef4444;
+    color: #fff1f2;
+    border-color: #ef4444;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-textbox,
+html.fieldops-tally-mode .fieldops-election-day .rz-dropdown,
+html.fieldops-tally-mode .fieldops-election-day .rz-numeric,
+html.fieldops-tally-mode .fieldops-election-day input.rz-textbox {
+    background: #020617;
+    color: #f8fafc;
+    border-color: #64748b;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-textbox::placeholder,
+html.fieldops-tally-mode .fieldops-election-day input::placeholder {
+    color: #94a3b8;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-checkbox-box {
+    border-color: #cbd5e1;
+}
+
+html.fieldops-tally-mode .fieldops-election-day .rz-badge {
+    box-shadow: none;
+}
+
 h1:focus {
     outline: none;
 }
