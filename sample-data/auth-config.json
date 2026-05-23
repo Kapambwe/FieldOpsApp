@@ -1,6 +1,26 @@
 {
   "demoProfiles": [
     {
+      "key": "zm-admin",
+      "label": "Zambia: UPND - Party Admin",
+      "country": "Zambia",
+      "party": "United Party for National Development",
+      "role": "Admin",
+      "username": "upnd.admin",
+      "password": "Admin123!",
+      "tenantId": "tenant-zm-upnd"
+    },
+    {
+      "key": "za-admin",
+      "label": "SA: ANC - Party Admin",
+      "country": "South Africa",
+      "party": "African National Congress",
+      "role": "Admin",
+      "username": "anc.admin",
+      "password": "Admin123!",
+      "tenantId": "tenant-za-anc"
+    },
+    {
       "key": "zm-upnd",
       "label": "Zambia: UPND - Field Canvasser",
       "country": "Zambia",
@@ -85,10 +105,30 @@
       "label": "Zambia - Result Capturer (UPND)",
       "country": "Zambia",
       "party": "United Party for National Development",
-      "role": "Result Capturer",
+      "role": "Poll Agent",
       "username": "results.officer",
       "password": "Agent123!",
       "tenantId": "tenant-zm-upnd"
+    },
+    {
+      "key": "zm-ccmg-observer",
+      "label": "Zambia: CCMG - Poll Observer",
+      "country": "Zambia",
+      "party": "Christian Churches Monitoring Group",
+      "role": "Observer",
+      "username": "ccmg.observer",
+      "password": "Agent123!",
+      "tenantId": "tenant-zm-ccmg"
+    },
+    {
+      "key": "zm-eu-observer",
+      "label": "Zambia: EU - International Observer",
+      "country": "Zambia",
+      "party": "European Union Election Observation Mission",
+      "role": "Observer",
+      "username": "eu.observer",
+      "password": "Agent123!",
+      "tenantId": "tenant-zm-eu"
     }
   ],
   "countryOptions": [
@@ -100,8 +140,10 @@
     { "code": "Zimbabwe", "text": "Zimbabwe" }
   ],
   "roleOptions": [
+    { "code": "Admin", "text": "Administrator" },
     { "code": "Canvasser", "text": "Canvasser" },
-    { "code": "Result Capturer", "text": "Result Capturer" }
+    { "code": "Poll Agent", "text": "Poll Agent" },
+    { "code": "Observer", "text": "Poll Observer" }
   ],
   "countryPartyOptions": {
     "Zambia": [
@@ -109,18 +151,15 @@
       { "code": "Patriotic Front", "text": "Patriotic Front (PF)" },
       { "code": "Socialist Party", "text": "Socialist Party" },
       { "code": "Citizen First", "text": "Citizen First" },
-      { "code": "Movement for Multi-Party Democracy", "text": "Movement for Multi-Party Democracy (MMD)" },
-      { "code": "United National Independence Party", "text": "United National Independence Party (UNIP)" }
+      { "code": "Christian Churches Monitoring Group", "text": "Christian Churches Monitoring Group (CCMG)" },
+      { "code": "European Union Election Observation Mission", "text": "EU Election Observation Mission" }
     ],
     "South Africa": [
       { "code": "African National Congress", "text": "African National Congress (ANC)" },
       { "code": "Democratic Alliance", "text": "Democratic Alliance (DA)" },
       { "code": "Economic Freedom Fighters", "text": "Economic Freedom Fighters (EFF)" },
-      { "code": "Inkatha Freedom Party", "text": "Inkatha Freedom Party (IFP)" },
-      { "code": "uMkhonto weSizwe", "text": "uMkhonto weSizwe (MK Party)" },
-      { "code": "Patriotic Alliance", "text": "Patriotic Alliance (PA)" },
-      { "code": "Freedom Front Plus", "text": "Freedom Front Plus (FF Plus)" },
-      { "code": "ActionSA", "text": "ActionSA" }
+      { "code": "Action Communities Online", "text": "Action Communities Online (CSO)" },
+      { "code": "African Union Election Observation", "text": "African Union Election Observation" }
     ]
   }
 }

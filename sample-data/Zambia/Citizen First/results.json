@@ -1,0 +1,37 @@
+[
+  {
+    "id": "sample-result-cf-1",
+    "captureLocationType": "PollingStation",
+    "pollingStationId": 401,
+    "pollingStationName": "Kitwe Central",
+    "constituency": "Nkana",
+    "ward": "Ward 5",
+    "registeredVoters": 700,
+    "validVotes": 550,
+    "rejectedVotes": 8,
+    "candidateVotes": [
+      {
+        "partyName": "Citizen First",
+        "candidateName": "Harry Kalaba",
+        "partyColor": "#808080",
+        "votes": 300
+      },
+      {
+        "partyName": "Patriotic Front",
+        "candidateName": "Edgar Lungu",
+        "partyColor": "#008000",
+        "votes": 150
+      },
+      {
+        "partyName": "United Party for National Development",
+        "candidateName": "Hakainde Hichilema",
+        "partyColor": "#ff0000",
+        "votes": 100
+      }
+    ],
+    "agentName": "Demo Agent",
+    "agentConfirmed": true,
+    "syncStatus": "Synced",
+    "recordedAt": "2026-05-23T14:45:00Z"
+  }
+]

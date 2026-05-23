@@ -1,0 +1,19 @@
+[
+  {
+    "id": "voter-mk-1",
+    "voterId": "ZA-MK-001",
+    "firstName": "Zanele",
+    "lastName": "Zuma",
+    "fullName": "Zanele Zuma",
+    "gender": "Female",
+    "age": 35,
+    "phoneNumber": "+27110000002",
+    "address": "Durban North",
+    "constituency": "eThekwini",
+    "ward": "Ward 5",
+    "pollingStationName": "Durban Central High",
+    "supportLevel": "Strong Supporter",
+    "partyAffiliation": "uMkhonto weSizwe",
+    "syncStatus": "Synced"
+  }
+]

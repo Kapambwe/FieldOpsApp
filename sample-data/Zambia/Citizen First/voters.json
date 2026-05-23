@@ -1,0 +1,28 @@
+[
+  {
+    "id": "zm-voter-cf-1",
+    "voterId": 4001001,
+    "firstName": "George",
+    "lastName": "Musa",
+    "phoneNumber": "+260 97 400 1001",
+    "address": "Kitwe Sector 4",
+    "ward": "Ward 5",
+    "constituency": "Nkana",
+    "pollingStationName": "Kitwe Central",
+    "supportLevel": "Strong Supporter",
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "zm-voter-cf-2",
+    "voterId": 4001002,
+    "firstName": "Prudence",
+    "lastName": "Kaunda",
+    "phoneNumber": "+260 97 400 1002",
+    "address": "Nkana West House 20",
+    "ward": "Ward 5",
+    "constituency": "Nkana",
+    "pollingStationName": "Kitwe Central",
+    "supportLevel": "Leaning Opposition",
+    "syncStatus": "Synced"
+  }
+]

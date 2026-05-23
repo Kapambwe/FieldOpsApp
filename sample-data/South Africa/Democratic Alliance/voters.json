@@ -1,15 +1,34 @@
 [
   {
     "id": "za-voter-da-1",
-    "voterId": 2002001,
-    "firstName": "Helen",
+    "voterId": "DA-001-ZA",
+    "firstName": "Pieter",
     "lastName": "Botha",
-    "phoneNumber": "+27 82 111 2222",
-    "address": "12 Oak Street, Stellenbosch",
-    "ward": "Ward 5",
-    "constituency": "Stellenbosch",
-    "pollingStationName": "Stellenbosch Library",
+    "gender": "Male",
+    "age": 38,
+    "phoneNumber": "+27 83 200 2001",
+    "address": "12 Long St, Cape Town",
+    "ward": "Ward 115",
+    "constituency": "Cape Town",
+    "pollingStationName": "Cape Town City Hall",
     "supportLevel": "Strong Supporter",
+    "partyAffiliation": "Democratic Alliance",
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "za-voter-da-2",
+    "voterId": "DA-002-ZA",
+    "firstName": "Sarah",
+    "lastName": "Smit",
+    "gender": "Female",
+    "age": 29,
+    "phoneNumber": "+27 83 200 2002",
+    "address": "Apartment 5, Green Point",
+    "ward": "Ward 115",
+    "constituency": "Cape Town",
+    "pollingStationName": "Cape Town City Hall",
+    "supportLevel": "Leaning Support",
+    "partyAffiliation": "Democratic Alliance",
     "syncStatus": "Synced"
   }
 ]

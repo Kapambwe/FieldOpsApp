@@ -1,15 +1,34 @@
 [
   {
     "id": "za-voter-anc-1",
-    "voterId": 2001001,
+    "voterId": "ANC-001-ZA",
     "firstName": "Sipho",
     "lastName": "Dlamini",
-    "phoneNumber": "+27 71 000 0001",
-    "address": "Section C, Soweto",
-    "ward": "Ward 45",
+    "gender": "Male",
+    "age": 52,
+    "phoneNumber": "+27 82 100 1001",
+    "address": "42 Vilakazi St, Soweto",
+    "ward": "Ward 42",
     "constituency": "Johannesburg",
-    "pollingStationName": "Soweto Community Hall",
+    "pollingStationName": "Soweto Community Center",
     "supportLevel": "Strong Supporter",
+    "partyAffiliation": "African National Congress",
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "za-voter-anc-2",
+    "voterId": "ANC-002-ZA",
+    "firstName": "Nomvula",
+    "lastName": "Mbeki",
+    "gender": "Female",
+    "age": 41,
+    "phoneNumber": "+27 82 100 1002",
+    "address": "Block B, Diepkloof",
+    "ward": "Ward 42",
+    "constituency": "Johannesburg",
+    "pollingStationName": "Soweto Community Center",
+    "supportLevel": "Leaning Support",
+    "partyAffiliation": "African National Congress",
     "syncStatus": "Synced"
   }
 ]

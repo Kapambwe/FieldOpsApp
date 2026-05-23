@@ -1,0 +1,14 @@
+[
+  {
+    "id": "zm-assignment-cf-1",
+    "campaignId": "citizen-first-community-engagement",
+    "campaignName": "Citizen First Community Engagement",
+    "ward": "Ward 5",
+    "constituency": "Nkana",
+    "targetContacts": 60,
+    "completedContacts": 15,
+    "status": "Active",
+    "priority": "High",
+    "syncStatus": "Synced"
+  }
+]

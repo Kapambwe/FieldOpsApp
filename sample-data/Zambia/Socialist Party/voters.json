@@ -1,0 +1,28 @@
+[
+  {
+    "id": "zm-voter-sp-1",
+    "voterId": 3001001,
+    "firstName": "Mary",
+    "lastName": "Banda",
+    "phoneNumber": "+260 95 300 1001",
+    "address": "UNZA Area, Lusaka",
+    "ward": "Ward 10",
+    "constituency": "Munali",
+    "pollingStationName": "University of Zambia",
+    "supportLevel": "Strong Supporter",
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "zm-voter-sp-2",
+    "voterId": 3001002,
+    "firstName": "Lombe",
+    "lastName": "Tembo",
+    "phoneNumber": "+260 95 300 1002",
+    "address": "Sector 3, Munali",
+    "ward": "Ward 10",
+    "constituency": "Munali",
+    "pollingStationName": "University of Zambia",
+    "supportLevel": "Undecided",
+    "syncStatus": "Synced"
+  }
+]

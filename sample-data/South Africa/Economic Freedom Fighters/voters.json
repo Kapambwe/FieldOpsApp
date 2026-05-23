@@ -1,0 +1,19 @@
+[
+  {
+    "id": "voter-eff-1",
+    "voterId": "ZA-EFF-001",
+    "firstName": "Thabo",
+    "lastName": "Molefe",
+    "fullName": "Thabo Molefe",
+    "gender": "Male",
+    "age": 28,
+    "phoneNumber": "+27110000001",
+    "address": "Soweto Block B",
+    "constituency": "Johannesburg",
+    "ward": "Ward 42",
+    "pollingStationName": "Soweto Community Center",
+    "supportLevel": "Strong Supporter",
+    "partyAffiliation": "Economic Freedom Fighters",
+    "syncStatus": "Synced"
+  }
+]

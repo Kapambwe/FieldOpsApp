@@ -1,0 +1,37 @@
+[
+  {
+    "id": "sample-result-da-1",
+    "captureLocationType": "PollingStation",
+    "pollingStationId": 2001,
+    "pollingStationName": "Cape Town City Hall",
+    "constituency": "Cape Town",
+    "ward": "Ward 115",
+    "registeredVoters": 3000,
+    "validVotes": 2400,
+    "rejectedVotes": 10,
+    "candidateVotes": [
+      {
+        "partyName": "Democratic Alliance",
+        "candidateName": "John Steenhuisen",
+        "partyColor": "#0000ff",
+        "votes": 1800
+      },
+      {
+        "partyName": "African National Congress",
+        "candidateName": "Cyril Ramaphosa",
+        "partyColor": "#008000",
+        "votes": 400
+      },
+      {
+        "partyName": "Economic Freedom Fighters",
+        "candidateName": "Julius Malema",
+        "partyColor": "#ff0000",
+        "votes": 200
+      }
+    ],
+    "agentName": "Demo Agent",
+    "agentConfirmed": true,
+    "syncStatus": "Synced",
+    "recordedAt": "2026-05-23T15:20:00Z"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "zm-voter-pf-1",
+    "voterId": 2001001,
+    "firstName": "John",
+    "lastName": "Phiri",
+    "phoneNumber": "+260 96 200 1001",
+    "address": "House 12, Chawama",
+    "ward": "Ward 2",
+    "constituency": "Chawama",
+    "pollingStationName": "Chawama Market Square",
+    "supportLevel": "Strong Supporter",
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "zm-voter-pf-2",
+    "voterId": 2001002,
+    "firstName": "Chileshe",
+    "lastName": "Mwamba",
+    "phoneNumber": "+260 96 200 1002",
+    "address": "Block 5, Chawama",
+    "ward": "Ward 2",
+    "constituency": "Chawama",
+    "pollingStationName": "Chawama Market Square",
+    "supportLevel": "Leaning Support",
+    "syncStatus": "Synced"
+  }
+]

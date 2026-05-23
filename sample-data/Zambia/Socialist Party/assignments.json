@@ -1,0 +1,14 @@
+[
+  {
+    "id": "zm-assignment-sp-1",
+    "campaignId": "socialist-party-rural-outreach",
+    "campaignName": "Socialist Party Rural Outreach",
+    "ward": "Ward 10",
+    "constituency": "Munali",
+    "targetContacts": 75,
+    "completedContacts": 20,
+    "status": "In Progress",
+    "priority": "Medium",
+    "syncStatus": "Synced"
+  }
+]
