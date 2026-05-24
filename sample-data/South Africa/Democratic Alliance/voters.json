@@ -1,7 +1,7 @@
 [
   {
     "id": "za-voter-da-1",
-    "voterId": "DA-001-ZA",
+    "voterId": 2001001,
     "firstName": "Pieter",
     "lastName": "Botha",
     "phoneNumber": "+27 83 200 2001",
@@ -18,7 +18,7 @@
   },
   {
     "id": "za-voter-da-2",
-    "voterId": "DA-002-ZA",
+    "voterId": 2001002,
     "firstName": "Sarah",
     "lastName": "Smit",
     "phoneNumber": "+27 83 200 2002",
@@ -35,7 +35,7 @@
   },
   {
     "id": "za-voter-da-3",
-    "voterId": "DA-003-ZA",
+    "voterId": 2001003,
     "firstName": "Johan",
     "lastName": "van der Merwe",
     "phoneNumber": "+27 83 200 2003",
@@ -52,7 +52,7 @@
   },
   {
     "id": "za-voter-da-4",
-    "voterId": "DA-004-ZA",
+    "voterId": 2001004,
     "firstName": "Nomsa",
     "lastName": "Khoza",
     "phoneNumber": "+27 83 200 2004",
@@ -66,5 +66,22 @@
     "syncStatus": "Synced",
     "latitude": -34.0300,
     "longitude": 18.6700
+  },
+  {
+    "id": "za-voter-da-5",
+    "voterId": 2001005,
+    "firstName": "Helen",
+    "lastName": "Zille",
+    "phoneNumber": "+27 83 200 2005",
+    "address": "Penthouse 1, Cape Town CBD",
+    "village": "Cape Town CBD",
+    "street": "Long Street",
+    "ward": "Ward 115",
+    "constituency": "Cape Town",
+    "pollingStationName": "Cape Town City Hall",
+    "supportLevel": "Strong Supporter",
+    "syncStatus": "Synced",
+    "latitude": -33.9240,
+    "longitude": 18.4240
   }
 ]

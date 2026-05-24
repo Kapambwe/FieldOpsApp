@@ -1,8 +1,8 @@
 [
   {
     "id": "zm-assignment-upnd-1",
-    "campaignId": "upnd-free-edu-tour",
-    "campaignName": "UPND Free Education & CDF Tour",
+    "campaignId": "upnd-d2d-canvassing",
+    "campaignName": "UPND: Door-to-Door Roster Clean-up",
     "ward": "Ward 1",
     "constituency": "Lusaka Central",
     "targetContacts": 50,
@@ -15,31 +15,31 @@
   },
   {
     "id": "zm-assignment-upnd-2",
-    "campaignId": "upnd-free-edu-tour",
-    "campaignName": "UPND Free Education & CDF Tour",
-    "ward": "Ward 2",
+    "campaignId": "upnd-village-outreach",
+    "campaignName": "UPND: Village Mobilization Drive",
+    "ward": "Ward 1",
     "constituency": "Lusaka Central",
-    "targetContacts": 30,
+    "targetContacts": 100,
     "completedContacts": 5,
     "status": "Active",
     "priority": "Medium",
     "syncStatus": "Synced",
-    "routeName": "Kabulonga Central",
-    "village": "Kabulonga Central"
+    "routeName": "Kalingalinga North",
+    "village": "Kalingalinga North"
   },
   {
     "id": "zm-assignment-upnd-3",
-    "campaignId": "upnd-youth-mobilization",
-    "campaignName": "Youth Mobilization 2026",
+    "campaignId": "upnd-megaphone-broad",
+    "campaignName": "UPND: Lusaka Mega-Broadcast",
     "ward": "Ward 1",
     "constituency": "Lusaka Central",
-    "targetContacts": 100,
+    "targetContacts": 20,
     "completedContacts": 0,
     "status": "Pending",
     "priority": "High",
     "syncStatus": "Synced",
-    "routeName": "Campus Outreach",
-    "village": "UNZA Campus"
+    "routeName": "Market Loop",
+    "village": "Kalingalinga North"
   },
   {
     "id": "zm-assignment-upnd-4",
@@ -47,12 +47,12 @@
     "campaignName": "UPND Victory 2026 Mobilization",
     "ward": "Ward 1",
     "constituency": "Lusaka Central",
-    "targetContacts": 1000,
+    "targetContacts": 1,
     "completedContacts": 0,
     "status": "Active",
     "priority": "Critical",
     "syncStatus": "Synced",
     "routeName": "Independence Square",
-    "village": "Independence Square"
+    "village": "Lusaka CBD"
   }
 ]

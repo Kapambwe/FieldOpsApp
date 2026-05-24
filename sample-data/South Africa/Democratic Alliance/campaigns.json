@@ -1,53 +1,68 @@
 [
   {
-    "id": "da-get-sa-working",
-    "name": "DA: Rescue South Africa",
-    "objective": "Mobilize voters around ending load shedding and creating a job-friendly environment.",
+    "id": "da-d2d-governance",
+    "name": "DA: Door-to-Door Governance Audit",
+    "objective": "Verify service delivery standards and citizen satisfaction in Cape Town.",
     "status": "Active",
     "campaignType": "Door-to-Door",
-    "territoryMode": "WardOnly",
-    "mainMessage": "A government that works: Ending load shedding, creating jobs, and delivering services for all South Africans.",
+    "territoryMode": "door_to_door",
+    "mainMessage": "DA: Getting things done. We are auditing your neighborhood to ensure excellence in local government.",
     "talkingPoints": [
-      "Ending Load Shedding: Privatizing energy and bringing in independent power producers.",
-      "Job Creation: Cutting red tape for small businesses and scrapping race-based policies (BEE).",
-      "Safe Communities: Professionalizing the police and giving more power to local law enforcement.",
-      "Proven Governance: The DA-led Western Cape model of clean audits and delivery."
+      "Water: Infrastructure maintenance updates.",
+      "Energy: Progress on load-shedding mitigation plans.",
+      "Safety: Expanding the local law enforcement presence."
     ],
     "questions": [
       {
-        "id": "da-q1",
-        "campaignId": "da-get-sa-working",
+        "id": "q1",
         "displayOrder": 1,
-        "prompt": "How many hours of load shedding did you experience in the last 24 hours?",
-        "questionType": "Numeric",
-        "isRequired": true
-      },
-      {
-        "id": "da-q2",
-        "campaignId": "da-get-sa-working",
-        "displayOrder": 2,
-        "prompt": "Do you believe your local municipality is delivering quality services?",
+        "prompt": "Is your electricity supply reliable?",
         "questionType": "YesNo",
         "isRequired": true
-      },
-      {
-        "id": "da-q3",
-        "campaignId": "da-get-sa-working",
-        "displayOrder": 3,
-        "prompt": "Will you support the DA to rescue South Africa from economic collapse?",
-        "questionType": "SingleChoice",
-        "isRequired": true,
-        "isOutcomeQuestion": true,
-        "options": [
-          { "value": "Strong Supporter", "label": "Yes, Definitely" },
-          { "value": "Leaning Support", "label": "Likely" },
-          { "value": "Undecided", "label": "Undecided" },
-          { "value": "Leaning Opposition", "label": "No" },
-          { "value": "Strong Opposition", "label": "Never" }
-        ]
       }
     ],
-    "syncStatus": "Synced",
-    "lastModified": "2026-05-19T13:00:00Z"
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "da-community-meeting",
+    "name": "DA: Ward 115 Community Hub",
+    "objective": "Engage with local safety and neighborhood watch leaders.",
+    "status": "Active",
+    "campaignType": "Village",
+    "territoryMode": "village_to_village",
+    "mainMessage": "Building Safe Communities: Stronger together through active citizenship.",
+    "talkingPoints": [
+      "Crime: Data-led policing strategies for your sector.",
+      "Waste: Updates on the new recycling initiative."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "da-megaphone-broad",
+    "name": "DA: Cape Town CBD Broadcast",
+    "objective": "Mass awareness of public transport shifts and SME support clinics.",
+    "status": "Active",
+    "campaignType": "Broadcasting",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "DA: Supporting Small Business! Visit the Grand Parade tomorrow for our SME registration clinic.",
+    "talkingPoints": [],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "da-governance-rally",
+    "name": "DA: Excellence in Governance Rally",
+    "objective": "Showcase the DA track record and outline the national prosperity plan.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "The DA vision for South Africa: Competence, job creation, and service delivery excellence.",
+    "talkingPoints": [
+      "Jobs: The plan to create 2 million real jobs.",
+      "Safety: A professional, devolved police service."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
   }
 ]

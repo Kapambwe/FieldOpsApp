@@ -1,16 +1,58 @@
 [
   {
     "id": "za-assignment-eff-1",
-    "campaignId": "eff-land-reform-2026",
-    "campaignName": "Land and Economic Freedom",
+    "campaignId": "eff-d2d-freedom",
+    "campaignName": "EFF: Door-to-Door Freedom Tour",
     "ward": "Ward 42",
     "constituency": "Johannesburg",
-    "targetContacts": 500,
+    "targetContacts": 300,
     "completedContacts": 120,
     "status": "Active",
     "priority": "High",
     "syncStatus": "Synced",
     "routeName": "Jabulani Outreach",
+    "village": "Jabulani Sector"
+  },
+  {
+    "id": "za-assignment-eff-2",
+    "campaignId": "eff-village-council",
+    "campaignName": "EFF: Village Peoples Council",
+    "ward": "Ward 42",
+    "constituency": "Johannesburg",
+    "targetContacts": 150,
+    "completedContacts": 25,
+    "status": "In Progress",
+    "priority": "Medium",
+    "syncStatus": "Synced",
+    "routeName": "Jabulani Outreach",
+    "village": "Jabulani Sector"
+  },
+  {
+    "id": "za-assignment-eff-3",
+    "campaignId": "eff-megaphone-broad",
+    "campaignName": "EFF: Johannesburg CBD Broadcast",
+    "ward": "Ward 60",
+    "constituency": "Johannesburg",
+    "targetContacts": 60,
+    "completedContacts": 0,
+    "status": "Pending",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Braamfontein Hub",
+    "village": "Braamfontein Hub"
+  },
+  {
+    "id": "za-assignment-eff-4",
+    "campaignId": "eff-land-reform-rally",
+    "campaignName": "EFF: Land and Economic Freedom Rally",
+    "ward": "Ward 42",
+    "constituency": "Johannesburg",
+    "targetContacts": 1,
+    "completedContacts": 0,
+    "status": "Active",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Soweto Grounds",
     "village": "Jabulani Sector"
   }
 ]

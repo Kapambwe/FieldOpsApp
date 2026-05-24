@@ -1,8 +1,8 @@
 [
   {
     "id": "za-assignment-da-1",
-    "campaignId": "da-get-things-done",
-    "campaignName": "DA: Getting Things Done",
+    "campaignId": "da-d2d-governance",
+    "campaignName": "DA: Door-to-Door Governance Audit",
     "ward": "Ward 115",
     "constituency": "Cape Town",
     "targetContacts": 200,
@@ -15,8 +15,8 @@
   },
   {
     "id": "za-assignment-da-2",
-    "campaignId": "da-local-governance",
-    "campaignName": "Local Governance Audit",
+    "campaignId": "da-community-meeting",
+    "campaignName": "DA: Ward 115 Community Hub",
     "ward": "Ward 115",
     "constituency": "Cape Town",
     "targetContacts": 150,
@@ -26,5 +26,33 @@
     "syncStatus": "Synced",
     "routeName": "Atlantic Seaboard",
     "village": "Sea Point Village"
+  },
+  {
+    "id": "za-assignment-da-3",
+    "campaignId": "da-megaphone-broad",
+    "campaignName": "DA: Cape Town CBD Broadcast",
+    "ward": "Ward 115",
+    "constituency": "Cape Town",
+    "targetContacts": 40,
+    "completedContacts": 0,
+    "status": "Pending",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "CBD Core",
+    "village": "Cape Town CBD"
+  },
+  {
+    "id": "za-assignment-da-4",
+    "campaignId": "da-governance-rally",
+    "campaignName": "DA: Excellence in Governance Rally",
+    "ward": "Ward 115",
+    "constituency": "Cape Town",
+    "targetContacts": 1,
+    "completedContacts": 0,
+    "status": "Active",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Grand Parade",
+    "village": "Cape Town CBD"
   }
 ]

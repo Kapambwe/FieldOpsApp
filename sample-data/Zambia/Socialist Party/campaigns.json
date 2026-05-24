@@ -1,53 +1,68 @@
 [
   {
-    "id": "sp-justice-tour",
-    "name": "Socialist Party: Justice, Equity and Peace",
-    "objective": "Mobilize the poor and working class around healthcare and labor rights.",
+    "id": "sp-d2d-outreach",
+    "name": "SP: Door-to-Door Justice Tour",
+    "objective": "Verify household living standards and discuss land redistribution.",
     "status": "Active",
     "campaignType": "Door-to-Door",
-    "territoryMode": "village_to_village",
-    "mainMessage": "A Zambia for the many, not the few: Fighting for real healthcare and living wages.",
+    "territoryMode": "door_to_door",
+    "mainMessage": "Socialist Party: Justice, Equity and Peace. We are here to listen to the working class.",
     "talkingPoints": [
-      "Healthcare Crisis: Medicines must be in clinics, not just in pharmacies.",
-      "Worker Rights: Ending casualization and ensuring a living wage.",
-      "Peasant Farmer Support: Direct fertilizer subsidies for the small-scale farmer.",
-      "Socialist Vision: National resources must benefit the people, not foreign companies."
+      "Land: Every family deserves a plot for shelter and farming.",
+      "Healthcare: Our plan for truly free healthcare at the point of need.",
+      "Equity: Ending the massive gap between the rich and the poor."
     ],
     "questions": [
       {
-        "id": "sp-q1",
-        "campaignId": "sp-justice-tour",
+        "id": "q1",
         "displayOrder": 1,
-        "prompt": "When you last visited the clinic, did you find the medicine you needed?",
+        "prompt": "Do you own the land your house is built on?",
         "questionType": "YesNo",
         "isRequired": true
-      },
-      {
-        "id": "sp-q2",
-        "campaignId": "sp-justice-tour",
-        "displayOrder": 2,
-        "prompt": "Do you believe the current government is doing enough for the working class?",
-        "questionType": "YesNo",
-        "isRequired": true
-      },
-      {
-        "id": "sp-q3",
-        "campaignId": "sp-justice-tour",
-        "displayOrder": 3,
-        "prompt": "Will you support the Socialist Party to bring real equity to Zambia?",
-        "questionType": "SingleChoice",
-        "isRequired": true,
-        "isOutcomeQuestion": true,
-        "options": [
-          { "value": "Strong Supporter", "label": "Yes, I believe in Justice" },
-          { "value": "Leaning Support", "label": "Likely" },
-          { "value": "Undecided", "label": "Undecided" },
-          { "value": "Leaning Opposition", "label": "No" },
-          { "value": "Strong Opposition", "label": "Never" }
-        ]
       }
     ],
-    "syncStatus": "Synced",
-    "lastModified": "2026-05-19T14:00:00Z"
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "sp-village-council",
+    "name": "SP: Village Workers Council",
+    "objective": "Mobilize community workers and farmers around labor rights.",
+    "status": "Active",
+    "campaignType": "Village",
+    "territoryMode": "village_to_village",
+    "mainMessage": "Workers of Zambia Unite: Building a better future for our children.",
+    "talkingPoints": [
+      "Labor: Strengthening village-level farming cooperatives.",
+      "Education: Ensuring quality school access for all village children."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "sp-megaphone-broad",
+    "name": "SP: Munali Hub Broadcast",
+    "objective": "Mass awareness of upcoming workers' rights town halls.",
+    "status": "Active",
+    "campaignType": "Broadcasting",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "SP: Join the People's Assembly! This Sunday at UNZA grounds. Your voice is your power!",
+    "talkingPoints": [],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "sp-justice-rally",
+    "name": "SP: National Justice Rally",
+    "objective": "Mobilize support for the 2026 Manifesto and announce labor reforms.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "Socialist Party: Justice for the poor. Free healthcare and land rights for all workers.",
+    "talkingPoints": [
+      "Miners Rights: Nationalizing strategic mining interests.",
+      "Farmers: Guaranteed floor prices for all small-scale farmers."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
   }
 ]

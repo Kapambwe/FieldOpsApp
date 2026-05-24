@@ -1,53 +1,68 @@
 [
   {
-    "id": "cf-zambians-first",
-    "name": "Citizen First: Putting Zambians First",
-    "objective": "Promote national unity and economic sovereignty for all citizens.",
+    "id": "cf-d2d-citizens",
+    "name": "CF: Door-to-Door Citizen Engagement",
+    "objective": "Verify citizen priorities and household needs in Kitwe.",
     "status": "Active",
     "campaignType": "Door-to-Door",
-    "territoryMode": "street_by_street_megaphone",
-    "mainMessage": "Our resources, our people: Putting the Zambian citizen at the center of all development.",
+    "territoryMode": "door_to_door",
+    "mainMessage": "Citizen First: Putting Zambians first. We are checking in to ensure your voice is heard at the national level.",
     "talkingPoints": [
-      "Economic Sovereignty: Priority for Zambian contractors and suppliers.",
-      "National Unity: Unity across all 73 tribes, merit-based appointments.",
-      "Land Ownership: Protecting land for the local people.",
-      "Mining Reform: Ensuring local communities benefit directly from mine royalties."
+      "Resources: Our plan to ensure local mines benefit the local community.",
+      "Employment: Priorities for local hiring in government projects.",
+      "Unity: Building a united Zambia for all citizens."
     ],
     "questions": [
       {
-        "id": "cf-q1",
-        "campaignId": "cf-zambians-first",
+        "id": "q1",
         "displayOrder": 1,
-        "prompt": "Do you believe local Zambian businesses are getting enough opportunities?",
+        "prompt": "Do you feel local resources benefit your community?",
         "questionType": "YesNo",
         "isRequired": true
-      },
-      {
-        "id": "cf-q2",
-        "campaignId": "cf-zambians-first",
-        "displayOrder": 2,
-        "prompt": "Which national issue concerns you most right now?",
-        "questionType": "FreeText",
-        "isRequired": false
-      },
-      {
-        "id": "cf-q3",
-        "campaignId": "cf-zambians-first",
-        "displayOrder": 3,
-        "prompt": "Will you support Citizen First to bring a new direction to our nation?",
-        "questionType": "SingleChoice",
-        "isRequired": true,
-        "isOutcomeQuestion": true,
-        "options": [
-          { "value": "Strong Supporter", "label": "Yes, Definitely" },
-          { "value": "Leaning Support", "label": "Likely" },
-          { "value": "Undecided", "label": "Undecided" },
-          { "value": "Leaning Opposition", "label": "No" },
-          { "value": "Strong Opposition", "label": "Never" }
-        ]
       }
     ],
-    "syncStatus": "Synced",
-    "lastModified": "2026-05-19T15:00:00Z"
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "cf-village-outreach",
+    "name": "CF: Grassroots Village Tour",
+    "objective": "Mobilize community groups and cooperatives in Nkana area.",
+    "status": "Active",
+    "campaignType": "Village",
+    "territoryMode": "village_to_village",
+    "mainMessage": "Grassroots Power: Strengthening our communities from the ground up.",
+    "talkingPoints": [
+      "Agriculture: Support for local small-scale farming cooperatives.",
+      "Infrastructure: Upgrading village access roads and bridges."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "cf-megaphone-broad",
+    "name": "CF: Kitwe Mega-Broadcast",
+    "objective": "Mass awareness of upcoming grassroots summits and unity rallies.",
+    "status": "Active",
+    "campaignType": "Broadcasting",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "Citizen First: Join the Movement! Public forum tomorrow at the Kitwe Central grounds. Unity is our strength!",
+    "talkingPoints": [],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "cf-unity-rally",
+    "name": "CF: National Unity Rally",
+    "objective": "Promote national unity and economic sovereignty for all citizens.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "Citizen First: Putting Zambians First. A united vision for a prosperous future.",
+    "talkingPoints": [
+      "Economic Sovereignty: Control over our own destiny and resources.",
+      "National Unity: One Zambia, One People, Putting Citizens First."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
   }
 ]

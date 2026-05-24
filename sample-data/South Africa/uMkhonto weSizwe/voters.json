@@ -1,7 +1,7 @@
 [
   {
-    "id": "voter-mk-1",
-    "voterId": "ZA-MK-001",
+    "id": "za-voter-mk-1",
+    "voterId": 4001001,
     "firstName": "Zanele",
     "lastName": "Zuma",
     "phoneNumber": "+27 82 500 1001",
@@ -17,8 +17,8 @@
     "longitude": 31.0450
   },
   {
-    "id": "voter-mk-2",
-    "voterId": "ZA-MK-002",
+    "id": "za-voter-mk-2",
+    "voterId": 4001002,
     "firstName": "Sanele",
     "lastName": "Mdluli",
     "phoneNumber": "+27 82 500 1002",
@@ -32,5 +32,22 @@
     "syncStatus": "Synced",
     "latitude": -29.9650,
     "longitude": 30.8850
+  },
+  {
+    "id": "za-voter-mk-3",
+    "voterId": 4001003,
+    "firstName": "Jacob",
+    "lastName": "Zuma",
+    "phoneNumber": "+27 82 500 1003",
+    "address": "House 1, Durban North",
+    "village": "Durban North Hub",
+    "street": "Adelaide Tambo Drive",
+    "constituency": "eThekwini",
+    "ward": "Ward 5",
+    "pollingStationName": "Durban Central High",
+    "supportLevel": "Strong Supporter",
+    "syncStatus": "Synced",
+    "latitude": -29.7855,
+    "longitude": 31.0455
   }
 ]

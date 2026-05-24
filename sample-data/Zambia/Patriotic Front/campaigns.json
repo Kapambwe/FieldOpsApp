@@ -1,54 +1,54 @@
 [
   {
-    "id": "pf-economic-recovery",
-    "name": "PF: The Economic Restoration Plan",
-    "objective": "Engage voters on the rising cost of living and present the PF vision for affordable essentials.",
+    "id": "pf-d2d-recovery",
+    "name": "PF: Door-to-Door Economic Audit",
+    "objective": "Listen to household concerns regarding the rising cost of living.",
     "status": "Active",
     "campaignType": "Door-to-Door",
     "territoryMode": "door_to_door",
-    "mainMessage": "Bringing back affordability: We delivered the roads and hospitals, now we will bring back affordable food and fuel.",
+    "mainMessage": "PF: Restoring economic dignity. We are here to listen to your challenges and present our recovery plan.",
     "talkingPoints": [
-      "Cost of Mealie Meal: We will stabilize prices.",
-      "Resuming suspended projects: No more 'stalled' construction.",
-      "Experience matters: We know how to run a social protection model.",
-      "Empowerment: Direct support for local traders without over-taxation."
+      "Economy: Present the 10-point plan for affordable mealie meal.",
+      "Agriculture: Discuss the return of subsidized fertilizer.",
+      "Energy: Explain our plan for stable fuel prices."
     ],
     "questions": [
       {
-        "id": "pf-q1",
-        "campaignId": "pf-economic-recovery",
+        "id": "q1",
         "displayOrder": 1,
-        "prompt": "Are you finding the current price of mealie meal and fuel manageable?",
+        "prompt": "Is the cost of mealie meal a major concern for you?",
         "questionType": "YesNo",
         "isRequired": true
-      },
-      {
-        "id": "pf-q2",
-        "campaignId": "pf-economic-recovery",
-        "displayOrder": 2,
-        "prompt": "Which PF infrastructure project in your ward do you value most?",
-        "questionType": "FreeText",
-        "isRequired": false
-      },
-      {
-        "id": "pf-q3",
-        "campaignId": "pf-economic-recovery",
-        "displayOrder": 3,
-        "prompt": "How likely are you to vote for the PF to restore economic stability?",
-        "questionType": "SingleChoice",
-        "isRequired": true,
-        "isOutcomeQuestion": true,
-        "options": [
-          { "value": "Strong Supporter", "label": "Very Likely" },
-          { "value": "Leaning Support", "label": "Likely" },
-          { "value": "Undecided", "label": "Undecided" },
-          { "value": "Leaning Opposition", "label": "Unlikely" },
-          { "value": "Strong Opposition", "label": "Very Unlikely" }
-        ]
       }
     ],
-    "syncStatus": "Synced",
-    "lastModified": "2026-05-19T11:00:00Z"
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "pf-village-drive",
+    "name": "PF: Community Restoration Drive",
+    "objective": "Engage community leaders on local infrastructure and security.",
+    "status": "Active",
+    "campaignType": "Village",
+    "territoryMode": "village_to_village",
+    "mainMessage": "Defending our Heritage: Building community resilience together.",
+    "talkingPoints": [
+      "Security: Strengthening local community police posts.",
+      "Markets: Plans for upgrading village market shelters."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "pf-megaphone-broad",
+    "name": "PF: Lusaka Market Broadcast",
+    "objective": "Mass awareness of upcoming branch elections and membership drives.",
+    "status": "Active",
+    "campaignType": "Broadcasting",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "PF: Join the Movement! Membership registration is happening this Sunday at the Chawama Market grounds.",
+    "talkingPoints": [],
+    "questions": [],
+    "syncStatus": "Synced"
   },
   {
     "id": "pf-recovery-rally",
@@ -60,11 +60,9 @@
     "mainMessage": "PF: Restoring economic dignity for all Zambians. Bringing back affordable mealie meal.",
     "talkingPoints": [
       "Subsidized Agriculture: Lowering the cost of production.",
-      "Fuel Stability: Implementing long-term fixed price contracts.",
-      "Social Safety Net: Re-introducing the Farmer Input Support Program (FISP) improvements."
+      "Fuel Stability: Implementing long-term fixed price contracts."
     ],
     "questions": [],
-    "syncStatus": "Synced",
-    "lastModified": "2026-05-20T11:00:00Z"
+    "syncStatus": "Synced"
   }
 ]

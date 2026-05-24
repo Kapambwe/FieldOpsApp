@@ -1,54 +1,54 @@
 [
   {
-    "id": "anc-social-renewal",
-    "name": "ANC: Social Renewal & The NHI",
-    "objective": "Inform citizens about the National Health Insurance (NHI) and secure support for social grant expansion.",
+    "id": "anc-d2d-canvassing",
+    "name": "ANC: Door-to-Door Service Delivery Audit",
+    "objective": "Verify voter details and household satisfaction in Soweto.",
     "status": "Active",
     "campaignType": "Door-to-Door",
     "territoryMode": "door_to_door",
-    "mainMessage": "Working together to build a better life: Protecting our democracy through social security and universal healthcare.",
+    "mainMessage": "ANC: Together we can do more. We are here to listen and resolve your service delivery concerns.",
     "talkingPoints": [
-      "NHI: Quality healthcare for all, not just those who can afford medical aid.",
-      "Social Grants: Expanding the safety net for the unemployed and vulnerable.",
-      "Title Deeds: Accelerating the delivery of housing and land ownership.",
-      "Industrialization: Creating jobs through local manufacturing and green energy."
+      "Housing: Verify status of RDP housing applications.",
+      "NHI: Educate on the benefits of the National Health Insurance.",
+      "Jobs: Discuss local internship and job opportunities for youth."
     ],
     "questions": [
       {
-        "id": "anc-q1",
-        "campaignId": "anc-social-renewal",
+        "id": "q1",
         "displayOrder": 1,
-        "prompt": "Are you or your family currently receiving any social grants?",
+        "prompt": "Are you satisfied with local waste removal?",
         "questionType": "YesNo",
         "isRequired": true
-      },
-      {
-        "id": "anc-q2",
-        "campaignId": "anc-social-renewal",
-        "displayOrder": 2,
-        "prompt": "What is the biggest service delivery challenge in this ward (Electricity, Water, Safety)?",
-        "questionType": "FreeText",
-        "isRequired": false
-      },
-      {
-        "id": "anc-q3",
-        "campaignId": "anc-social-renewal",
-        "displayOrder": 3,
-        "prompt": "Will you support the ANC to continue its mandate of social transformation?",
-        "questionType": "SingleChoice",
-        "isRequired": true,
-        "isOutcomeQuestion": true,
-        "options": [
-          { "value": "Strong Supporter", "label": "Strongly Supportive" },
-          { "value": "Leaning Support", "label": "Supportive" },
-          { "value": "Undecided", "label": "Undecided" },
-          { "value": "Leaning Opposition", "label": "Opposing" },
-          { "value": "Strong Opposition", "label": "Strongly Opposing" }
-        ]
       }
     ],
-    "syncStatus": "Synced",
-    "lastModified": "2026-05-19T12:00:00Z"
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "anc-village-gathering",
+    "name": "ANC: Community Gathering Drive",
+    "objective": "Engage community leaders and influencers in Ward 42.",
+    "status": "Active",
+    "campaignType": "Village",
+    "territoryMode": "village_to_village",
+    "mainMessage": "Defending Democracy: Building our communities together.",
+    "talkingPoints": [
+      "Community Safety: Strengthening neighborhood watch groups.",
+      "Land: Progress on communal land rights and titles."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "anc-megaphone-broad",
+    "name": "ANC: Gauteng Mega-Broadcast",
+    "objective": "Mass awareness of upcoming manifesto launches and policy shifts.",
+    "status": "Active",
+    "campaignType": "Broadcasting",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "Join the Movement: Tomorrow at Orlando Stadium for the People's Assembly. A better life for all!",
+    "talkingPoints": [],
+    "questions": [],
+    "syncStatus": "Synced"
   },
   {
     "id": "anc-rally-soweto",
@@ -60,11 +60,9 @@
     "mainMessage": "ANC: Renewing the mandate for social justice and economic transformation.",
     "talkingPoints": [
       "NHI Implementation: Quality healthcare for all South Africans.",
-      "Social Grants: Protecting the most vulnerable through sustainable funding.",
-      "Infrastructure: Upgrading local roads and sanitation in Soweto."
+      "Social Grants: Protecting the most vulnerable through sustainable funding."
     ],
     "questions": [],
-    "syncStatus": "Synced",
-    "lastModified": "2026-05-20T12:00:00Z"
+    "syncStatus": "Synced"
   }
 ]

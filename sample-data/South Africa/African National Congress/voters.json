@@ -1,7 +1,7 @@
 [
   {
     "id": "za-voter-anc-1",
-    "voterId": "ANC-001-ZA",
+    "voterId": 1001001,
     "firstName": "Sipho",
     "lastName": "Dlamini",
     "phoneNumber": "+27 82 100 1001",
@@ -18,7 +18,7 @@
   },
   {
     "id": "za-voter-anc-2",
-    "voterId": "ANC-002-ZA",
+    "voterId": 1001002,
     "firstName": "Nomvula",
     "lastName": "Mbeki",
     "phoneNumber": "+27 82 100 1002",
@@ -35,7 +35,7 @@
   },
   {
     "id": "za-voter-anc-3",
-    "voterId": "ANC-003-ZA",
+    "voterId": 1001003,
     "firstName": "Thabo",
     "lastName": "Sithole",
     "phoneNumber": "+27 82 100 1003",
@@ -52,7 +52,7 @@
   },
   {
     "id": "za-voter-anc-4",
-    "voterId": "ANC-004-ZA",
+    "voterId": 1001004,
     "firstName": "Lerato",
     "lastName": "Molefe",
     "phoneNumber": "+27 82 100 1004",
@@ -66,5 +66,22 @@
     "syncStatus": "Synced",
     "latitude": -26.2300,
     "longitude": 27.9100
+  },
+  {
+    "id": "za-voter-anc-5",
+    "voterId": 1001005,
+    "firstName": "Lindiwe",
+    "lastName": "Sisulu",
+    "phoneNumber": "+27 82 100 1005",
+    "address": "House 77, Soweto North",
+    "village": "Soweto North",
+    "street": "Vilakazi Street",
+    "ward": "Ward 42",
+    "constituency": "Johannesburg",
+    "pollingStationName": "Soweto Community Center",
+    "supportLevel": "Strong Supporter",
+    "syncStatus": "Synced",
+    "latitude": -26.2380,
+    "longitude": 27.9060
   }
 ]

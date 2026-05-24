@@ -1,8 +1,8 @@
 [
   {
     "id": "zm-assignment-sp-1",
-    "campaignId": "socialist-party-rural-outreach",
-    "campaignName": "SP: Justice for All Outreach",
+    "campaignId": "sp-d2d-outreach",
+    "campaignName": "SP: Door-to-Door Justice Tour",
     "ward": "Ward 10",
     "constituency": "Munali",
     "targetContacts": 100,
@@ -15,8 +15,8 @@
   },
   {
     "id": "zm-assignment-sp-2",
-    "campaignId": "socialist-equality-drive",
-    "campaignName": "Equality and Rights Drive",
+    "campaignId": "sp-village-council",
+    "campaignName": "SP: Village Workers Council",
     "ward": "Ward 10",
     "constituency": "Munali",
     "targetContacts": 120,
@@ -26,5 +26,33 @@
     "syncStatus": "Synced",
     "routeName": "Munali East Hub",
     "village": "Munali East"
+  },
+  {
+    "id": "zm-assignment-sp-3",
+    "campaignId": "sp-megaphone-broad",
+    "campaignName": "SP: Munali Hub Broadcast",
+    "ward": "Ward 10",
+    "constituency": "Munali",
+    "targetContacts": 30,
+    "completedContacts": 0,
+    "status": "Pending",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "UNZA Corridor",
+    "village": "UNZA Campus"
+  },
+  {
+    "id": "zm-assignment-sp-4",
+    "campaignId": "sp-justice-rally",
+    "campaignName": "SP: National Justice Rally",
+    "ward": "Ward 10",
+    "constituency": "Munali",
+    "targetContacts": 1,
+    "completedContacts": 0,
+    "status": "Active",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "UNZA Grounds",
+    "village": "UNZA Campus"
   }
 ]

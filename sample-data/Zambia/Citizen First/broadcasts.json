@@ -1,0 +1,19 @@
+[
+  {
+    "id": "br-cf-1",
+    "campaignId": "cf-unity-rally",
+    "campaignName": "CF: National Unity Rally",
+    "agentId": "citizen.agent",
+    "agentName": "Demo Citizen First Agent",
+    "startedAt": "2026-05-14T09:00:00Z",
+    "endedAt": "2026-05-14T13:30:00Z",
+    "territoryMode": "mass_rally",
+    "routeName": "Kitwe Central",
+    "venueAddress": "Kitwe Central Grounds",
+    "narrativeDelivered": "Putting Zambians First. Control over our own destiny and resources.",
+    "estimatedAudienceCount": 2100,
+    "sentiment": "Positive",
+    "notes": "Good reception for the economic sovereignty points. Market traders were present.",
+    "syncStatus": "Synced"
+  }
+]
