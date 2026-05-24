@@ -2,13 +2,29 @@
   {
     "id": "zm-assignment-sp-1",
     "campaignId": "socialist-party-rural-outreach",
-    "campaignName": "Socialist Party Rural Outreach",
+    "campaignName": "SP: Justice for All Outreach",
     "ward": "Ward 10",
     "constituency": "Munali",
-    "targetContacts": 75,
-    "completedContacts": 20,
+    "targetContacts": 100,
+    "completedContacts": 40,
+    "status": "Active",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Munali West Route",
+    "village": "Munali West"
+  },
+  {
+    "id": "zm-assignment-sp-2",
+    "campaignId": "socialist-equality-drive",
+    "campaignName": "Equality and Rights Drive",
+    "ward": "Ward 10",
+    "constituency": "Munali",
+    "targetContacts": 120,
+    "completedContacts": 15,
     "status": "In Progress",
     "priority": "Medium",
-    "syncStatus": "Synced"
+    "syncStatus": "Synced",
+    "routeName": "Munali East Hub",
+    "village": "Munali East"
   }
 ]

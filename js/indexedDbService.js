@@ -1,5 +1,5 @@
 const DB_NAME = 'FieldOpsDb';
-const DB_VERSION = 4;
+const DB_VERSION = 5;
 
 const STORE_SCHEMAS = [
     { 
@@ -21,6 +21,7 @@ const STORE_SCHEMAS = [
     { name: 'campaign_assignments', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'campaignId', keyPath: 'campaignId' }, { name: 'volunteerId', keyPath: 'volunteerId' }, { name: 'status', keyPath: 'status' }] },
     { name: 'campaign_responses', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'campaignId', keyPath: 'campaignId' }, { name: 'assignmentId', keyPath: 'assignmentId' }, { name: 'voterId', keyPath: 'voterId' }, { name: 'agentId', keyPath: 'agentId' }] },
     { name: 'follow_up_tasks', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'campaignId', keyPath: 'campaignId' }, { name: 'voterId', keyPath: 'voterId' }, { name: 'assignedToAgentId', keyPath: 'assignedToAgentId' }, { name: 'status', keyPath: 'status' }] },
+    { name: 'broadcast_sessions', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'campaignId', keyPath: 'campaignId' }, { name: 'agentId', keyPath: 'agentId' }] },
     { name: 'observer_incidents', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'incidentType', keyPath: 'incidentType' }, { name: 'observerName', keyPath: 'observerName' }, { name: 'stationName', keyPath: 'stationName' }, { name: 'assignedArea', keyPath: 'assignedArea' }, { name: 'createdAt', keyPath: 'incidentAt' }] },
     { name: 'sync_queue', keyPath: 'id', indexes: [{ name: 'storeName', keyPath: 'storeName' }, { name: 'createdAt', keyPath: 'createdAt' }] },
     { name: 'photos', keyPath: 'id', indexes: [{ name: 'syncStatus', keyPath: 'syncStatus' }, { name: 'resultId', keyPath: 'resultId' }] },
@@ -139,7 +140,7 @@ export async function getBySyncStatus(storeName, status) {
 export async function getAllPendingSync() {
     const db = await openDb();
     const result = {};
-    const stores = ['voters', 'contacts', 'election_results', 'photos', 'campaigns', 'campaign_assignments', 'campaign_responses', 'follow_up_tasks', 'observer_incidents'];
+    const stores = ['voters', 'contacts', 'election_results', 'photos', 'campaigns', 'campaign_assignments', 'campaign_responses', 'follow_up_tasks', 'broadcast_sessions', 'observer_incidents'];
     for (const store of stores) {
         if (!db.objectStoreNames.contains(store)) {
             result[store] = { pendingCreate: [], pendingUpdate: [], pendingDelete: [] };

@@ -1,1 +1,45 @@
-[]
+[
+  {
+    "id": "eff-land-reform-2026",
+    "name": "EFF: Land and Economic Freedom",
+    "objective": "Mobilize support for expropriation of land without compensation and industrialization.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "village_to_village",
+    "mainMessage": "Economic Freedom in Our Lifetime: Reclaiming our land and nationalizing our mines for the benefit of all.",
+    "talkingPoints": [
+      "Land Expropriation: Dignity begins with land ownership.",
+      "Free Education: Quality higher education for the poor.",
+      "Minimum Wage: R12,500 across all sectors.",
+      "In-sourcing: Ending all security and cleaning tenders in government."
+    ],
+    "questions": [
+      {
+        "id": "eff-q1",
+        "campaignId": "eff-land-reform-2026",
+        "displayOrder": 1,
+        "prompt": "Do you believe the current land distribution is fair?",
+        "questionType": "YesNo",
+        "isRequired": true
+      },
+      {
+        "id": "eff-q2",
+        "campaignId": "eff-land-reform-2026",
+        "displayOrder": 2,
+        "prompt": "Are you or anyone in your household unemployed?",
+        "questionType": "YesNo",
+        "isRequired": true
+      },
+      {
+        "id": "eff-q3",
+        "campaignId": "eff-land-reform-2026",
+        "displayOrder": 3,
+        "prompt": "Will you join the EFF command team as a volunteer?",
+        "questionType": "YesNo",
+        "isRequired": false
+      }
+    ],
+    "syncStatus": "Synced",
+    "lastModified": "2026-05-19T10:00:00Z"
+  }
+]

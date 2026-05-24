@@ -9,6 +9,50 @@
     "completedContacts": 12,
     "status": "In Progress",
     "priority": "High",
-    "syncStatus": "Synced"
+    "syncStatus": "Synced",
+    "routeName": "Kalingalinga North",
+    "village": "Kalingalinga North"
+  },
+  {
+    "id": "zm-assignment-upnd-2",
+    "campaignId": "upnd-free-edu-tour",
+    "campaignName": "UPND Free Education & CDF Tour",
+    "ward": "Ward 2",
+    "constituency": "Lusaka Central",
+    "targetContacts": 30,
+    "completedContacts": 5,
+    "status": "Active",
+    "priority": "Medium",
+    "syncStatus": "Synced",
+    "routeName": "Kabulonga Central",
+    "village": "Kabulonga Central"
+  },
+  {
+    "id": "zm-assignment-upnd-3",
+    "campaignId": "upnd-youth-mobilization",
+    "campaignName": "Youth Mobilization 2026",
+    "ward": "Ward 1",
+    "constituency": "Lusaka Central",
+    "targetContacts": 100,
+    "completedContacts": 0,
+    "status": "Pending",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Campus Outreach",
+    "village": "UNZA Campus"
+  },
+  {
+    "id": "zm-assignment-upnd-4",
+    "campaignId": "upnd-victory-rally",
+    "campaignName": "UPND Victory 2026 Mobilization",
+    "ward": "Ward 1",
+    "constituency": "Lusaka Central",
+    "targetContacts": 1000,
+    "completedContacts": 0,
+    "status": "Active",
+    "priority": "Critical",
+    "syncStatus": "Synced",
+    "routeName": "Independence Square",
+    "village": "Independence Square"
   }
 ]

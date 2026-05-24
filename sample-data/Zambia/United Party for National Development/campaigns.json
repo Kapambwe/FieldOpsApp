@@ -5,7 +5,7 @@
     "objective": "Verify awareness of educational benefits and local CDF projects.",
     "status": "Active",
     "campaignType": "Door-to-Door",
-    "territoryMode": "WardOnly",
+    "territoryMode": "door_to_door",
     "mainMessage": "Education for all: We have delivered free education to every child. Now, we are bringing development to your ward through CDF.",
     "talkingPoints": [
       "No more school fees from primary to secondary.",
@@ -49,5 +49,22 @@
     ],
     "syncStatus": "Synced",
     "lastModified": "2026-05-19T10:00:00Z"
+  },
+  {
+    "id": "upnd-victory-rally",
+    "name": "UPND Victory 2026 Mobilization",
+    "objective": "Mobilize support and announce final manifesto points at major venues.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "Uniting for Victory: Securing Zambia's future through development and transparency.",
+    "talkingPoints": [
+      "Economic Growth: 5% GDP target for 2027.",
+      "Youth Employment: Launch of the National Internship Scheme.",
+      "Healthcare: Refurbishment of all District Hospitals."
+    ],
+    "questions": [],
+    "syncStatus": "Synced",
+    "lastModified": "2026-05-20T10:00:00Z"
   }
 ]

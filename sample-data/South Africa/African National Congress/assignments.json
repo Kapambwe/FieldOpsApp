@@ -1,14 +1,58 @@
 [
   {
     "id": "za-assignment-anc-1",
-    "campaignId": "anc-social-renewal",
-    "campaignName": "ANC: Social Renewal & The NHI",
-    "ward": "Ward 45",
+    "campaignId": "anc-renewal-2026",
+    "campaignName": "ANC Renewal Campaign",
+    "ward": "Ward 42",
     "constituency": "Johannesburg",
-    "targetContacts": 30,
-    "completedContacts": 5,
+    "targetContacts": 150,
+    "completedContacts": 45,
     "status": "In Progress",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Soweto North",
+    "village": "Soweto North"
+  },
+  {
+    "id": "za-assignment-anc-2",
+    "campaignId": "anc-renewal-2026",
+    "campaignName": "ANC Renewal Campaign",
+    "ward": "Ward 43",
+    "constituency": "Johannesburg",
+    "targetContacts": 100,
+    "completedContacts": 15,
+    "status": "Active",
     "priority": "Medium",
-    "syncStatus": "Synced"
+    "syncStatus": "Synced",
+    "routeName": "Orlando West",
+    "village": "Orlando West"
+  },
+  {
+    "id": "za-assignment-anc-3",
+    "campaignId": "anc-volunteer-drive",
+    "campaignName": "Gauteng Volunteer Drive",
+    "ward": "Ward 42",
+    "constituency": "Johannesburg",
+    "targetContacts": 300,
+    "completedContacts": 0,
+    "status": "Pending",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Diepkloof Sector",
+    "village": "Diepkloof Sector"
+  },
+  {
+    "id": "za-assignment-anc-4",
+    "campaignId": "anc-rally-soweto",
+    "campaignName": "ANC Soweto Peoples Rally",
+    "ward": "Ward 42",
+    "constituency": "Johannesburg",
+    "targetContacts": 5000,
+    "completedContacts": 0,
+    "status": "Active",
+    "priority": "Critical",
+    "syncStatus": "Synced",
+    "routeName": "Orlando Stadium",
+    "village": "Orlando West"
   }
 ]

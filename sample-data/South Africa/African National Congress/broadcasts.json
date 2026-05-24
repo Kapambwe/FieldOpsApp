@@ -1,0 +1,19 @@
+[
+  {
+    "id": "br-anc-1",
+    "campaignId": "anc-rally-soweto",
+    "campaignName": "ANC Soweto Peoples Rally",
+    "agentId": "anc.agent",
+    "agentName": "Demo ANC Agent",
+    "startedAt": "2026-05-16T14:00:00Z",
+    "endedAt": "2026-05-16T18:00:00Z",
+    "territoryMode": "mass_rally",
+    "routeName": "Soweto North",
+    "venueAddress": "Orlando Stadium Outer Fields",
+    "narrativeDelivered": "Renewing the mandate for social justice and economic transformation.",
+    "estimatedAudienceCount": 8500,
+    "sentiment": "Positive",
+    "notes": "Strong focus on NHI benefits. Crowd was engaged.",
+    "syncStatus": "Synced"
+  }
+]

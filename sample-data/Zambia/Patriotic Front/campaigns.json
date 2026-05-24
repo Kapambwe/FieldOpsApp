@@ -5,7 +5,7 @@
     "objective": "Engage voters on the rising cost of living and present the PF vision for affordable essentials.",
     "status": "Active",
     "campaignType": "Door-to-Door",
-    "territoryMode": "WardOnly",
+    "territoryMode": "door_to_door",
     "mainMessage": "Bringing back affordability: We delivered the roads and hospitals, now we will bring back affordable food and fuel.",
     "talkingPoints": [
       "Cost of Mealie Meal: We will stabilize prices.",
@@ -49,5 +49,22 @@
     ],
     "syncStatus": "Synced",
     "lastModified": "2026-05-19T11:00:00Z"
+  },
+  {
+    "id": "pf-recovery-rally",
+    "name": "PF Economic Recovery Rally",
+    "objective": "Engage voters on the rising cost of living and present the PF vision for affordable essentials.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "PF: Restoring economic dignity for all Zambians. Bringing back affordable mealie meal.",
+    "talkingPoints": [
+      "Subsidized Agriculture: Lowering the cost of production.",
+      "Fuel Stability: Implementing long-term fixed price contracts.",
+      "Social Safety Net: Re-introducing the Farmer Input Support Program (FISP) improvements."
+    ],
+    "questions": [],
+    "syncStatus": "Synced",
+    "lastModified": "2026-05-20T11:00:00Z"
   }
 ]

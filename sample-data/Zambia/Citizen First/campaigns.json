@@ -5,7 +5,7 @@
     "objective": "Promote national unity and economic sovereignty for all citizens.",
     "status": "Active",
     "campaignType": "Door-to-Door",
-    "territoryMode": "WardOnly",
+    "territoryMode": "street_by_street_megaphone",
     "mainMessage": "Our resources, our people: Putting the Zambian citizen at the center of all development.",
     "talkingPoints": [
       "Economic Sovereignty: Priority for Zambian contractors and suppliers.",

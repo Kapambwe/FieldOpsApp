@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "za-assignment-eff-1",
+    "campaignId": "eff-land-reform-2026",
+    "campaignName": "Land and Economic Freedom",
+    "ward": "Ward 42",
+    "constituency": "Johannesburg",
+    "targetContacts": 500,
+    "completedContacts": 120,
+    "status": "Active",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Jabulani Outreach",
+    "village": "Jabulani Sector"
+  }
+]

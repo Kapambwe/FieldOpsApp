@@ -5,12 +5,16 @@
     "firstName": "Mary",
     "lastName": "Banda",
     "phoneNumber": "+260 95 300 1001",
-    "address": "UNZA Area, Lusaka",
+    "address": "UNZA Area, Munali West",
+    "village": "Munali West",
+    "street": "Great East Road",
     "ward": "Ward 10",
     "constituency": "Munali",
     "pollingStationName": "University of Zambia",
     "supportLevel": "Strong Supporter",
-    "syncStatus": "Synced"
+    "syncStatus": "Synced",
+    "latitude": -15.3950,
+    "longitude": 28.3350
   },
   {
     "id": "zm-voter-sp-2",
@@ -18,11 +22,32 @@
     "firstName": "Lombe",
     "lastName": "Tembo",
     "phoneNumber": "+260 95 300 1002",
-    "address": "Sector 3, Munali",
+    "address": "Sector 3, Munali East",
+    "village": "Munali East",
+    "street": "Jomo Kenyatta Road",
     "ward": "Ward 10",
     "constituency": "Munali",
     "pollingStationName": "University of Zambia",
     "supportLevel": "Undecided",
-    "syncStatus": "Synced"
+    "syncStatus": "Synced",
+    "latitude": -15.3960,
+    "longitude": 28.3360
+  },
+  {
+    "id": "zm-voter-sp-3",
+    "voterId": 3001003,
+    "firstName": "Kondwani",
+    "lastName": "Mtonga",
+    "phoneNumber": "+260 95 300 1003",
+    "address": "House 45, Munali West",
+    "village": "Munali West",
+    "street": "Katima Mulilo Road",
+    "ward": "Ward 10",
+    "constituency": "Munali",
+    "pollingStationName": "University of Zambia",
+    "supportLevel": "Strong Supporter",
+    "syncStatus": "Synced",
+    "latitude": -15.3955,
+    "longitude": 28.3355
   }
 ]

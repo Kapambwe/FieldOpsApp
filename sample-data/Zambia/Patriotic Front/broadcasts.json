@@ -1,0 +1,19 @@
+[
+  {
+    "id": "br-pf-1",
+    "campaignId": "pf-recovery-rally",
+    "campaignName": "PF Economic Recovery Rally",
+    "agentId": "pf.agent",
+    "agentName": "Demo PF Agent",
+    "startedAt": "2026-05-14T15:00:00Z",
+    "endedAt": "2026-05-14T19:00:00Z",
+    "territoryMode": "mass_rally",
+    "routeName": "Chawama",
+    "venueAddress": "Chawama Grounds",
+    "narrativeDelivered": "The PF Economic Restoration Plan: Focus on affordable food and fuel.",
+    "estimatedAudienceCount": 3500,
+    "sentiment": "Positive",
+    "notes": "Large crowd from surrounding wards. Focus on mealie meal prices.",
+    "syncStatus": "Synced"
+  }
+]

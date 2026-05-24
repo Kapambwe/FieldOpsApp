@@ -5,7 +5,7 @@
     "objective": "Inform citizens about the National Health Insurance (NHI) and secure support for social grant expansion.",
     "status": "Active",
     "campaignType": "Door-to-Door",
-    "territoryMode": "WardOnly",
+    "territoryMode": "door_to_door",
     "mainMessage": "Working together to build a better life: Protecting our democracy through social security and universal healthcare.",
     "talkingPoints": [
       "NHI: Quality healthcare for all, not just those who can afford medical aid.",
@@ -49,5 +49,22 @@
     ],
     "syncStatus": "Synced",
     "lastModified": "2026-05-19T12:00:00Z"
+  },
+  {
+    "id": "anc-rally-soweto",
+    "name": "ANC Soweto Peoples Rally",
+    "objective": "Demonstrate grassroots strength in Soweto and outline the 2026 Renewal Plan.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "ANC: Renewing the mandate for social justice and economic transformation.",
+    "talkingPoints": [
+      "NHI Implementation: Quality healthcare for all South Africans.",
+      "Social Grants: Protecting the most vulnerable through sustainable funding.",
+      "Infrastructure: Upgrading local roads and sanitation in Soweto."
+    ],
+    "questions": [],
+    "syncStatus": "Synced",
+    "lastModified": "2026-05-20T12:00:00Z"
   }
 ]

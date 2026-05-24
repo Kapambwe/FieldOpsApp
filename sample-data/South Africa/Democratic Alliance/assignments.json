@@ -1,14 +1,30 @@
 [
   {
     "id": "za-assignment-da-1",
-    "campaignId": "da-get-sa-working",
-    "campaignName": "DA: Rescue South Africa",
-    "ward": "Ward 5",
-    "constituency": "Stellenbosch",
-    "targetContacts": 20,
-    "completedContacts": 0,
-    "status": "Pending",
+    "campaignId": "da-get-things-done",
+    "campaignName": "DA: Getting Things Done",
+    "ward": "Ward 115",
+    "constituency": "Cape Town",
+    "targetContacts": 200,
+    "completedContacts": 85,
+    "status": "Active",
     "priority": "High",
-    "syncStatus": "Synced"
+    "syncStatus": "Synced",
+    "routeName": "CBD Core",
+    "village": "Cape Town CBD"
+  },
+  {
+    "id": "za-assignment-da-2",
+    "campaignId": "da-local-governance",
+    "campaignName": "Local Governance Audit",
+    "ward": "Ward 115",
+    "constituency": "Cape Town",
+    "targetContacts": 150,
+    "completedContacts": 30,
+    "status": "In Progress",
+    "priority": "Medium",
+    "syncStatus": "Synced",
+    "routeName": "Atlantic Seaboard",
+    "village": "Sea Point Village"
   }
 ]

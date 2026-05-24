@@ -1,0 +1,36 @@
+[
+  {
+    "id": "br-upnd-1",
+    "campaignId": "upnd-victory-rally",
+    "campaignName": "UPND Victory 2026 Mobilization",
+    "agentId": "upnd.agent",
+    "agentName": "Demo UPND Agent",
+    "startedAt": "2026-05-15T10:00:00Z",
+    "endedAt": "2026-05-15T14:30:00Z",
+    "territoryMode": "mass_rally",
+    "routeName": "Lusaka Central",
+    "venueAddress": "Independence Square, Lusaka",
+    "narrativeDelivered": "Building a better Zambia together. Unity, Progress, and National Development.",
+    "estimatedAudienceCount": 5000,
+    "sentiment": "Very Positive",
+    "notes": "Extremely high turnout. Youth wing very active.",
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "br-upnd-2",
+    "campaignId": "upnd-free-edu-tour",
+    "campaignName": "UPND Free Education & CDF Tour",
+    "agentId": "upnd.agent",
+    "agentName": "Demo UPND Agent",
+    "startedAt": "2026-05-18T09:00:00Z",
+    "endedAt": "2026-05-18T12:00:00Z",
+    "territoryMode": "street_by_street_megaphone",
+    "routeName": "Kalingalinga North",
+    "venueAddress": "Market Street Loop",
+    "narrativeDelivered": "Verify awareness of educational benefits and local CDF projects.",
+    "estimatedAudienceCount": 1200,
+    "sentiment": "Positive",
+    "notes": "Good reception in the market area.",
+    "syncStatus": "Synced"
+  }
+]

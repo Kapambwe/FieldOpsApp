@@ -5,7 +5,7 @@
     "objective": "Mobilize the poor and working class around healthcare and labor rights.",
     "status": "Active",
     "campaignType": "Door-to-Door",
-    "territoryMode": "WardOnly",
+    "territoryMode": "village_to_village",
     "mainMessage": "A Zambia for the many, not the few: Fighting for real healthcare and living wages.",
     "talkingPoints": [
       "Healthcare Crisis: Medicines must be in clinics, not just in pharmacies.",

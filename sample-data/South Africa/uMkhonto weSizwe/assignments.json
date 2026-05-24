@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "za-assignment-mk-1",
+    "campaignId": "mk-sovereignty-2026",
+    "campaignName": "Sovereignty and People's Power",
+    "ward": "Ward 5",
+    "constituency": "eThekwini",
+    "targetContacts": 400,
+    "completedContacts": 150,
+    "status": "Active",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Durban North Outreach",
+    "village": "Durban North Hub"
+  }
+]

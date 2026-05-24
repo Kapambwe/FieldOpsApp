@@ -2,13 +2,15 @@
   {
     "id": "zm-assignment-cf-1",
     "campaignId": "citizen-first-community-engagement",
-    "campaignName": "Citizen First Community Engagement",
+    "campaignName": "Grassroots Engagement Tour",
     "ward": "Ward 5",
     "constituency": "Nkana",
-    "targetContacts": 60,
-    "completedContacts": 15,
+    "targetContacts": 150,
+    "completedContacts": 45,
     "status": "Active",
     "priority": "High",
-    "syncStatus": "Synced"
+    "syncStatus": "Synced",
+    "routeName": "Sector 4 Block",
+    "village": "Kitwe Sector 4"
   }
 ]

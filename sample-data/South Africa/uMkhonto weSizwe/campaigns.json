@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "id": "mk-sovereignty-2026",
+    "name": "MK: Sovereignty and People's Power",
+    "objective": "Promote the vision of parliamentary sovereignty and constitutional overhaul.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "Uniting for Sovereignty: Returning power to the people through traditional leadership and parliamentary rule.",
+    "talkingPoints": [
+      "Parliamentary Sovereignty: Courts should not override the will of the people.",
+      "Traditional Leadership: Restoring the dignity and power of Kings and Chiefs.",
+      "Nationalization: Strategic sectors must be under state control.",
+      "Social Security: Doubling the child support grant."
+    ],
+    "questions": [
+      {
+        "id": "mk-q1",
+        "campaignId": "mk-sovereignty-2026",
+        "displayOrder": 1,
+        "prompt": "Do you believe the Constitution protects your interests?",
+        "questionType": "YesNo",
+        "isRequired": true
+      },
+      {
+        "id": "mk-q2",
+        "campaignId": "mk-sovereignty-2026",
+        "displayOrder": 2,
+        "prompt": "Are you concerned about the current social grant delivery system?",
+        "questionType": "YesNo",
+        "isRequired": true
+      }
+    ],
+    "syncStatus": "Synced",
+    "lastModified": "2026-05-19T13:00:00Z"
+  }
+]
