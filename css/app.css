@@ -322,12 +322,6 @@ code {
         padding: 0.75rem 1rem !important;
     }
 
-    .rz-sidebar {
-        width: 100% !important;
-        height: auto !important;
-        position: static !important;
-    }
-
     .rz-content {
         padding: 1rem !important;
     }
