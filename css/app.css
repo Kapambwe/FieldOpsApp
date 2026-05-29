@@ -354,3 +354,96 @@ code {
         margin-right: 0;
     }
 }
+
+/* Field Visit Flow - Mobile Optimized Stepper */
+.visit-flow-stepper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.visit-flow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    z-index: 1;
+}
+
+.visit-flow-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 12px; /* Half of circle height */
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #e2e8f0;
+    z-index: -1;
+}
+
+.visit-flow-step.active:not(:last-child)::after {
+    background: linear-gradient(90deg, var(--rz-primary) 0%, #e2e8f0 100%);
+}
+
+.visit-flow-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #64748b;
+    margin-bottom: 0.4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.visit-flow-step.active .visit-flow-circle {
+    background-color: var(--rz-primary);
+    border-color: var(--rz-primary);
+    color: white;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+.visit-flow-step.completed .visit-flow-circle {
+    background-color: var(--rz-success);
+    border-color: var(--rz-success);
+    color: white;
+}
+
+.visit-flow-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    text-align: center;
+}
+
+.visit-flow-step.active .visit-flow-label {
+    color: var(--rz-primary);
+    font-weight: 700;
+}
+
+@media (max-width: 480px) {
+    .visit-flow-label {
+        font-size: 0.6rem;
+    }
+    
+    .visit-flow-circle {
+        width: 20px;
+        height: 20px;
+        font-size: 0.7rem;
+    }
+    
+    .visit-flow-step:not(:last-child)::after {
+        top: 10px;
+    }
+}
