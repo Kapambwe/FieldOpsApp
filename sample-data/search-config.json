@@ -1,0 +1,7 @@
+{
+  "searchScopes": [
+    { "title": "People", "description": "Voters, contacts, and field history." },
+    { "title": "Campaign Work", "description": "Campaigns, assignments, and responses." },
+    { "title": "Field Ops", "description": "Follow-ups, election results, photos, drafts, and sync items." }
+  ]
+}

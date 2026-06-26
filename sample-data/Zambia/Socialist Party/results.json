@@ -1,0 +1,37 @@
+[
+  {
+    "id": "sample-result-sp-1",
+    "captureLocationType": "PollingStation",
+    "pollingStationId": 301,
+    "pollingStationName": "University of Zambia",
+    "constituency": "Munali",
+    "ward": "Ward 10",
+    "registeredVoters": 500,
+    "validVotes": 400,
+    "rejectedVotes": 2,
+    "candidateVotes": [
+      {
+        "partyName": "Socialist Party",
+        "candidateName": "Fred M'membe",
+        "partyColor": "#ff0000",
+        "votes": 250
+      },
+      {
+        "partyName": "United Party for National Development",
+        "candidateName": "Hakainde Hichilema",
+        "partyColor": "#ff0000",
+        "votes": 100
+      },
+      {
+        "partyName": "Patriotic Front",
+        "candidateName": "Edgar Lungu",
+        "partyColor": "#008000",
+        "votes": 50
+      }
+    ],
+    "agentName": "Demo Agent",
+    "agentConfirmed": true,
+    "syncStatus": "Synced",
+    "recordedAt": "2026-05-23T09:15:00Z"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "zm-assignment-pf-1",
+    "campaignId": "pf-d2d-recovery",
+    "campaignName": "PF: Door-to-Door Economic Audit",
+    "ward": "Ward 2",
+    "constituency": "Chawama",
+    "targetContacts": 100,
+    "completedContacts": 35,
+    "status": "In Progress",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Chawama West",
+    "village": "Chawama West"
+  },
+  {
+    "id": "zm-assignment-pf-2",
+    "campaignId": "pf-village-drive",
+    "campaignName": "PF: Community Restoration Drive",
+    "ward": "Ward 3",
+    "constituency": "Chawama",
+    "targetContacts": 80,
+    "completedContacts": 10,
+    "status": "Active",
+    "priority": "Medium",
+    "syncStatus": "Synced",
+    "routeName": "Misisi Outreach",
+    "village": "Misisi Outreach"
+  },
+  {
+    "id": "zm-assignment-pf-3",
+    "campaignId": "pf-megaphone-broad",
+    "campaignName": "PF: Lusaka Market Broadcast",
+    "ward": "Ward 2",
+    "constituency": "Chawama",
+    "targetContacts": 50,
+    "completedContacts": 0,
+    "status": "Pending",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Market Square Focus",
+    "village": "Chawama Central"
+  },
+  {
+    "id": "zm-assignment-pf-4",
+    "campaignId": "pf-recovery-rally",
+    "campaignName": "PF Economic Recovery Rally",
+    "ward": "Ward 2",
+    "constituency": "Chawama",
+    "targetContacts": 1,
+    "completedContacts": 0,
+    "status": "Active",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Chawama Grounds",
+    "village": "Chawama Central"
+  }
+]

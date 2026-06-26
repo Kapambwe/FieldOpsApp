@@ -1,0 +1,37 @@
+[
+  {
+    "id": "sample-result-pf-1",
+    "captureLocationType": "PollingStation",
+    "pollingStationId": 201,
+    "pollingStationName": "Chawama Market Square",
+    "constituency": "Chawama",
+    "ward": "Ward 2",
+    "registeredVoters": 1200,
+    "validVotes": 950,
+    "rejectedVotes": 12,
+    "candidateVotes": [
+      {
+        "partyName": "Patriotic Front",
+        "candidateName": "Edgar Lungu",
+        "partyColor": "#008000",
+        "votes": 700
+      },
+      {
+        "partyName": "United Party for National Development",
+        "candidateName": "Hakainde Hichilema",
+        "partyColor": "#ff0000",
+        "votes": 200
+      },
+      {
+        "partyName": "Socialist Party",
+        "candidateName": "Fred M'membe",
+        "partyColor": "#ff0000",
+        "votes": 50
+      }
+    ],
+    "agentName": "Demo Agent",
+    "agentConfirmed": true,
+    "syncStatus": "Synced",
+    "recordedAt": "2026-05-23T11:30:00Z"
+  }
+]

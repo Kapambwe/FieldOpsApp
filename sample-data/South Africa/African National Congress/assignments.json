@@ -1,0 +1,58 @@
+[
+  {
+    "id": "za-assignment-anc-1",
+    "campaignId": "anc-d2d-canvassing",
+    "campaignName": "ANC: Door-to-Door Service Delivery Audit",
+    "ward": "Ward 42",
+    "constituency": "Johannesburg",
+    "targetContacts": 150,
+    "completedContacts": 45,
+    "status": "In Progress",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Soweto North",
+    "village": "Soweto North"
+  },
+  {
+    "id": "za-assignment-anc-2",
+    "campaignId": "anc-village-gathering",
+    "campaignName": "ANC: Community Gathering Drive",
+    "ward": "Ward 42",
+    "constituency": "Johannesburg",
+    "targetContacts": 100,
+    "completedContacts": 15,
+    "status": "Active",
+    "priority": "Medium",
+    "syncStatus": "Synced",
+    "routeName": "Soweto North",
+    "village": "Soweto North"
+  },
+  {
+    "id": "za-assignment-anc-3",
+    "campaignId": "anc-megaphone-broad",
+    "campaignName": "ANC: Gauteng Mega-Broadcast",
+    "ward": "Ward 42",
+    "constituency": "Johannesburg",
+    "targetContacts": 30,
+    "completedContacts": 0,
+    "status": "Pending",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Diepkloof Sector",
+    "village": "Diepkloof Sector"
+  },
+  {
+    "id": "za-assignment-anc-4",
+    "campaignId": "anc-rally-soweto",
+    "campaignName": "ANC Soweto Peoples Rally",
+    "ward": "Ward 42",
+    "constituency": "Johannesburg",
+    "targetContacts": 1,
+    "completedContacts": 0,
+    "status": "Active",
+    "priority": "Critical",
+    "syncStatus": "Synced",
+    "routeName": "Orlando Stadium",
+    "village": "Orlando West"
+  }
+]

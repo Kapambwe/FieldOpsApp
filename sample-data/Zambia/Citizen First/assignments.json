@@ -1,0 +1,58 @@
+[
+  {
+    "id": "zm-assignment-cf-1",
+    "campaignId": "cf-d2d-citizens",
+    "campaignName": "CF: Door-to-Door Citizen Engagement",
+    "ward": "Ward 5",
+    "constituency": "Nkana",
+    "targetContacts": 150,
+    "completedContacts": 45,
+    "status": "Active",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Sector 4 Block",
+    "village": "Kitwe Sector 4"
+  },
+  {
+    "id": "zm-assignment-cf-2",
+    "campaignId": "cf-village-outreach",
+    "campaignName": "CF: Grassroots Village Tour",
+    "ward": "Ward 5",
+    "constituency": "Nkana",
+    "targetContacts": 100,
+    "completedContacts": 10,
+    "status": "In Progress",
+    "priority": "Medium",
+    "syncStatus": "Synced",
+    "routeName": "Nkana West Area",
+    "village": "Nkana Central Hub"
+  },
+  {
+    "id": "zm-assignment-cf-3",
+    "campaignId": "cf-megaphone-broad",
+    "campaignName": "CF: Kitwe Mega-Broadcast",
+    "ward": "Ward 5",
+    "constituency": "Nkana",
+    "targetContacts": 40,
+    "completedContacts": 0,
+    "status": "Pending",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Market Corridor",
+    "village": "Kitwe Sector 4"
+  },
+  {
+    "id": "zm-assignment-cf-4",
+    "campaignId": "cf-unity-rally",
+    "campaignName": "CF: National Unity Rally",
+    "ward": "Ward 5",
+    "constituency": "Nkana",
+    "targetContacts": 1,
+    "completedContacts": 0,
+    "status": "Active",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Kitwe Grounds",
+    "village": "Kitwe Sector 4"
+  }
+]

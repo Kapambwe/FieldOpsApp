@@ -1,0 +1,68 @@
+[
+  {
+    "id": "mk-d2d-sovereignty",
+    "name": "MK: Door-to-Door Sovereignty Tour",
+    "objective": "Engage households on the vision of parliamentary sovereignty.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "door_to_door",
+    "mainMessage": "MK: Power back to the people. We are checking in to discuss the return of traditional leadership and people's rule.",
+    "talkingPoints": [
+      "Sovereignty: Restoring power to parliament and traditional Kings.",
+      "Economy: Nationalizing strategic sectors for the benefit of the poor.",
+      "Social: Doubling child support grants to fight poverty."
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "displayOrder": 1,
+        "prompt": "Do you support doubling the child support grant?",
+        "questionType": "YesNo",
+        "isRequired": true
+      }
+    ],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "mk-village-mobilization",
+    "name": "MK: Village People's Assembly",
+    "objective": "Mobilize rural communities and traditional headmen.",
+    "status": "Active",
+    "campaignType": "Village",
+    "territoryMode": "village_to_village",
+    "mainMessage": "MK: Uniting our villages for a sovereign future.",
+    "talkingPoints": [
+      "Traditional: Empowering local headmen to resolve community disputes.",
+      "Land: Securing communal land rights for all families."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "mk-megaphone-broad",
+    "name": "MK: eThekwini Mega-Broadcast",
+    "objective": "Mass awareness of upcoming branch launches and regalia distribution.",
+    "status": "Active",
+    "campaignType": "Broadcasting",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "MK: Join the Revolution! Durban Central branch launch tomorrow at 10 AM. Defend your future!",
+    "talkingPoints": [],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "mk-sovereignty-rally",
+    "name": "MK: Sovereignty and People's Power Rally",
+    "objective": "Promote the vision of parliamentary sovereignty and constitutional overhaul.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "Uniting for Sovereignty: Returning power to the people through traditional leadership and parliamentary rule.",
+    "talkingPoints": [
+      "Parliamentary Sovereignty: Courts should not override the will of the people.",
+      "Nationalization: Strategic sectors must be under state control."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  }
+]

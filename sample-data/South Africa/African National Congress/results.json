@@ -1,0 +1,37 @@
+[
+  {
+    "id": "sample-result-anc-1",
+    "captureLocationType": "PollingStation",
+    "pollingStationId": 1001,
+    "pollingStationName": "Soweto Community Center",
+    "constituency": "Johannesburg",
+    "ward": "Ward 42",
+    "registeredVoters": 2500,
+    "validVotes": 1800,
+    "rejectedVotes": 25,
+    "candidateVotes": [
+      {
+        "partyName": "African National Congress",
+        "candidateName": "Cyril Ramaphosa",
+        "partyColor": "#008000",
+        "votes": 1200
+      },
+      {
+        "partyName": "Democratic Alliance",
+        "candidateName": "John Steenhuisen",
+        "partyColor": "#0000ff",
+        "votes": 300
+      },
+      {
+        "partyName": "Economic Freedom Fighters",
+        "candidateName": "Julius Malema",
+        "partyColor": "#ff0000",
+        "votes": 300
+      }
+    ],
+    "agentName": "Demo Agent",
+    "agentConfirmed": true,
+    "syncStatus": "Synced",
+    "recordedAt": "2026-05-23T12:00:00Z"
+  }
+]

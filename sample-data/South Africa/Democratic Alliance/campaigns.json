@@ -1,0 +1,68 @@
+[
+  {
+    "id": "da-d2d-governance",
+    "name": "DA: Door-to-Door Governance Audit",
+    "objective": "Verify service delivery standards and citizen satisfaction in Cape Town.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "door_to_door",
+    "mainMessage": "DA: Getting things done. We are auditing your neighborhood to ensure excellence in local government.",
+    "talkingPoints": [
+      "Water: Infrastructure maintenance updates.",
+      "Energy: Progress on load-shedding mitigation plans.",
+      "Safety: Expanding the local law enforcement presence."
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "displayOrder": 1,
+        "prompt": "Is your electricity supply reliable?",
+        "questionType": "YesNo",
+        "isRequired": true
+      }
+    ],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "da-community-meeting",
+    "name": "DA: Ward 115 Community Hub",
+    "objective": "Engage with local safety and neighborhood watch leaders.",
+    "status": "Active",
+    "campaignType": "Village",
+    "territoryMode": "village_to_village",
+    "mainMessage": "Building Safe Communities: Stronger together through active citizenship.",
+    "talkingPoints": [
+      "Crime: Data-led policing strategies for your sector.",
+      "Waste: Updates on the new recycling initiative."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "da-megaphone-broad",
+    "name": "DA: Cape Town CBD Broadcast",
+    "objective": "Mass awareness of public transport shifts and SME support clinics.",
+    "status": "Active",
+    "campaignType": "Broadcasting",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "DA: Supporting Small Business! Visit the Grand Parade tomorrow for our SME registration clinic.",
+    "talkingPoints": [],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "da-governance-rally",
+    "name": "DA: Excellence in Governance Rally",
+    "objective": "Showcase the DA track record and outline the national prosperity plan.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "The DA vision for South Africa: Competence, job creation, and service delivery excellence.",
+    "talkingPoints": [
+      "Jobs: The plan to create 2 million real jobs.",
+      "Safety: A professional, devolved police service."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  }
+]

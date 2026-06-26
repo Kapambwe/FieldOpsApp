@@ -1,0 +1,19 @@
+[
+  {
+    "id": "br-da-1",
+    "campaignId": "da-get-things-done",
+    "campaignName": "DA: Getting Things Done",
+    "agentId": "da.agent",
+    "agentName": "Demo DA Agent",
+    "startedAt": "2026-05-17T11:00:00Z",
+    "endedAt": "2026-05-17T15:00:00Z",
+    "territoryMode": "mass_rally",
+    "routeName": "Cape Town CBD",
+    "venueAddress": "Grand Parade, Cape Town",
+    "narrativeDelivered": "The DA vision for South Africa: Competence, job creation, and service delivery excellence.",
+    "estimatedAudienceCount": 2500,
+    "sentiment": "Positive",
+    "notes": "Town hall style meeting. Focus on municipal success stories.",
+    "syncStatus": "Synced"
+  }
+]

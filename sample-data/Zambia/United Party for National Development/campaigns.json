@@ -1,0 +1,68 @@
+[
+  {
+    "id": "upnd-d2d-canvassing",
+    "name": "UPND: Door-to-Door Roster Clean-up",
+    "objective": "Verify voter details and household support in Kalingalinga North.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "door_to_door",
+    "mainMessage": "UPND: A government that listens. We are checking in to ensure your community needs are being met.",
+    "talkingPoints": [
+      "Education: Verify your children are benefiting from the free education policy.",
+      "Health: Updates on the local clinic expansion.",
+      "Infrastructure: Discussing the new drainage projects in your ward."
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "displayOrder": 1,
+        "prompt": "Are you aware of the free education policy?",
+        "questionType": "YesNo",
+        "isRequired": true
+      }
+    ],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "upnd-village-outreach",
+    "name": "UPND: Village Mobilization Drive",
+    "objective": "Cluster-based engagement with community leaders and villagers.",
+    "status": "Active",
+    "campaignType": "Village",
+    "territoryMode": "village_to_village",
+    "mainMessage": "Community Unity: Moving Zambia forward village by village.",
+    "talkingPoints": [
+      "FISP: Fertilizer and seed distribution updates.",
+      "Boreholes: Clean water access projects for the village."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "upnd-megaphone-broad",
+    "name": "UPND: Lusaka Mega-Broadcast",
+    "objective": "Mass awareness of upcoming branch meetings and policy successes.",
+    "status": "Active",
+    "campaignType": "Broadcasting",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "Join us this Saturday at 10 AM for the UNZA Youth Branch meeting. Progress through unity!",
+    "talkingPoints": [],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "upnd-victory-rally",
+    "name": "UPND Victory 2026 Mobilization",
+    "objective": "Mobilize support and announce final manifesto points at major venues.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "Uniting for Victory: Securing Zambia's future through development and transparency.",
+    "talkingPoints": [
+      "Economic Growth: 5% GDP target for 2027.",
+      "Youth Employment: Launch of the National Internship Scheme."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  }
+]

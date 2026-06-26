@@ -1,0 +1,68 @@
+[
+  {
+    "id": "eff-d2d-freedom",
+    "name": "EFF: Door-to-Door Freedom Tour",
+    "objective": "Mobilize the poor and working class around land and minimum wage.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "door_to_door",
+    "mainMessage": "EFF: Economic Freedom in Our Lifetime. We are here to reclaim our land and our dignity.",
+    "talkingPoints": [
+      "Land: Expropriation without compensation for the poor.",
+      "Wage: Fighting for a national minimum wage of R12,500.",
+      "Health: Refurbishing local clinics and ending tenderpreneurship."
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "displayOrder": 1,
+        "prompt": "Are you currently employed?",
+        "questionType": "YesNo",
+        "isRequired": true
+      }
+    ],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "eff-village-council",
+    "name": "EFF: Village Peoples Council",
+    "objective": "Engage traditional leaders and rural communities on land rights.",
+    "status": "Active",
+    "campaignType": "Village",
+    "territoryMode": "village_to_village",
+    "mainMessage": "Land is Dignity: Power to the people through ownership.",
+    "talkingPoints": [
+      "Traditional: Respecting our Kings and Chiefs through empowerment.",
+      "Services: Quality water and electricity for every rural household."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "eff-megaphone-broad",
+    "name": "EFF: Johannesburg CBD Broadcast",
+    "objective": "Mass awareness of insourcing victories and university fee protests.",
+    "status": "Active",
+    "campaignType": "Broadcasting",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "EFF: Stand for Student Rights! Join the march to the Dept of Education tomorrow at 9 AM.",
+    "talkingPoints": [],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "eff-land-reform-rally",
+    "name": "EFF: Land and Economic Freedom Rally",
+    "objective": "Mobilize support for expropriation of land without compensation and industrialization.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "Economic Freedom in Our Lifetime: Reclaiming our land and nationalizing our mines for the benefit of all.",
+    "talkingPoints": [
+      "Land Expropriation: Dignity begins with land ownership.",
+      "Free Education: Quality higher education for the poor."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  }
+]

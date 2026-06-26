@@ -1,0 +1,53 @@
+[
+  {
+    "id": "zm-voter-cf-1",
+    "voterId": 4001001,
+    "firstName": "George",
+    "lastName": "Musa",
+    "phoneNumber": "+260 97 400 1001",
+    "address": "House 12, Kitwe Sector 4",
+    "village": "Kitwe Sector 4",
+    "street": "Independence Avenue",
+    "ward": "Ward 5",
+    "constituency": "Nkana",
+    "pollingStationName": "Kitwe Central",
+    "supportLevel": "Strong Supporter",
+    "syncStatus": "Synced",
+    "latitude": -12.8250,
+    "longitude": 28.2150
+  },
+  {
+    "id": "zm-voter-cf-2",
+    "voterId": 4001002,
+    "firstName": "Prudence",
+    "lastName": "Kaunda",
+    "phoneNumber": "+260 97 400 1002",
+    "address": "Nkana West House 20, Central Hub",
+    "village": "Nkana Central Hub",
+    "street": "Kantanta Street",
+    "ward": "Ward 5",
+    "constituency": "Nkana",
+    "pollingStationName": "Kitwe Central",
+    "supportLevel": "Leaning Opposition",
+    "syncStatus": "Synced",
+    "latitude": -12.8260,
+    "longitude": 28.2160
+  },
+  {
+    "id": "zm-voter-cf-3",
+    "voterId": 4001003,
+    "firstName": "Isaac",
+    "lastName": "Mumba",
+    "phoneNumber": "+260 97 400 1003",
+    "address": "Kitwe East Block A, Sector 4",
+    "village": "Kitwe Sector 4",
+    "street": "Kuomboka Drive",
+    "ward": "Ward 5",
+    "constituency": "Nkana",
+    "pollingStationName": "Kitwe Central",
+    "supportLevel": "Undecided",
+    "syncStatus": "Synced",
+    "latitude": -12.8255,
+    "longitude": 28.2155
+  }
+]

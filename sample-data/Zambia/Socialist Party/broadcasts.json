@@ -1,0 +1,19 @@
+[
+  {
+    "id": "br-sp-1",
+    "campaignId": "sp-justice-tour",
+    "campaignName": "Socialist Party: Justice, Equity and Peace",
+    "agentId": "socialist.agent",
+    "agentName": "Demo Socialist Agent",
+    "startedAt": "2026-05-12T13:00:00Z",
+    "endedAt": "2026-05-12T16:00:00Z",
+    "territoryMode": "village_to_village",
+    "routeName": "Munali",
+    "venueAddress": "Munali Village Gathering",
+    "narrativeDelivered": "Justice for the poor. Free healthcare and land rights for all workers.",
+    "estimatedAudienceCount": 450,
+    "sentiment": "Very Positive",
+    "notes": "Engaged with local farming cooperatives. High interest in land reform.",
+    "syncStatus": "Synced"
+  }
+]

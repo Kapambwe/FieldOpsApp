@@ -1,0 +1,19 @@
+[
+  {
+    "id": "br-mk-1",
+    "campaignId": "mk-sovereignty-rally",
+    "campaignName": "MK: Sovereignty and People's Power Rally",
+    "agentId": "mk.agent",
+    "agentName": "Demo MK Agent",
+    "startedAt": "2026-05-13T11:00:00Z",
+    "endedAt": "2026-05-13T16:00:00Z",
+    "territoryMode": "mass_rally",
+    "routeName": "Durban Central",
+    "venueAddress": "Durban City Hall Square",
+    "narrativeDelivered": "Returning power to the people through traditional leadership and parliamentary rule.",
+    "estimatedAudienceCount": 4200,
+    "sentiment": "Positive",
+    "notes": "Strong representation from local headmen. Focus on social grant doubling.",
+    "syncStatus": "Synced"
+  }
+]

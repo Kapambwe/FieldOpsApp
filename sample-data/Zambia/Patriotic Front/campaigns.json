@@ -1,0 +1,68 @@
+[
+  {
+    "id": "pf-d2d-recovery",
+    "name": "PF: Door-to-Door Economic Audit",
+    "objective": "Listen to household concerns regarding the rising cost of living.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "door_to_door",
+    "mainMessage": "PF: Restoring economic dignity. We are here to listen to your challenges and present our recovery plan.",
+    "talkingPoints": [
+      "Economy: Present the 10-point plan for affordable mealie meal.",
+      "Agriculture: Discuss the return of subsidized fertilizer.",
+      "Energy: Explain our plan for stable fuel prices."
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "displayOrder": 1,
+        "prompt": "Is the cost of mealie meal a major concern for you?",
+        "questionType": "YesNo",
+        "isRequired": true
+      }
+    ],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "pf-village-drive",
+    "name": "PF: Community Restoration Drive",
+    "objective": "Engage community leaders on local infrastructure and security.",
+    "status": "Active",
+    "campaignType": "Village",
+    "territoryMode": "village_to_village",
+    "mainMessage": "Defending our Heritage: Building community resilience together.",
+    "talkingPoints": [
+      "Security: Strengthening local community police posts.",
+      "Markets: Plans for upgrading village market shelters."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "pf-megaphone-broad",
+    "name": "PF: Lusaka Market Broadcast",
+    "objective": "Mass awareness of upcoming branch elections and membership drives.",
+    "status": "Active",
+    "campaignType": "Broadcasting",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "PF: Join the Movement! Membership registration is happening this Sunday at the Chawama Market grounds.",
+    "talkingPoints": [],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "pf-recovery-rally",
+    "name": "PF Economic Recovery Rally",
+    "objective": "Engage voters on the rising cost of living and present the PF vision for affordable essentials.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "PF: Restoring economic dignity for all Zambians. Bringing back affordable mealie meal.",
+    "talkingPoints": [
+      "Subsidized Agriculture: Lowering the cost of production.",
+      "Fuel Stability: Implementing long-term fixed price contracts."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  }
+]

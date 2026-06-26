@@ -1,0 +1,58 @@
+[
+  {
+    "id": "za-assignment-mk-1",
+    "campaignId": "mk-d2d-sovereignty",
+    "campaignName": "MK: Door-to-Door Sovereignty Tour",
+    "ward": "Ward 5",
+    "constituency": "eThekwini",
+    "targetContacts": 200,
+    "completedContacts": 65,
+    "status": "In Progress",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Durban North Outreach",
+    "village": "Durban North Hub"
+  },
+  {
+    "id": "za-assignment-mk-2",
+    "campaignId": "mk-village-mobilization",
+    "campaignName": "MK: Village People's Assembly",
+    "ward": "Ward 75",
+    "constituency": "eThekwini",
+    "targetContacts": 150,
+    "completedContacts": 20,
+    "status": "Active",
+    "priority": "Medium",
+    "syncStatus": "Synced",
+    "routeName": "Umlazi Sector",
+    "village": "Umlazi Sector"
+  },
+  {
+    "id": "za-assignment-mk-3",
+    "campaignId": "mk-megaphone-broad",
+    "campaignName": "MK: eThekwini Mega-Broadcast",
+    "ward": "Ward 5",
+    "constituency": "eThekwini",
+    "targetContacts": 50,
+    "completedContacts": 0,
+    "status": "Pending",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Durban Central Loop",
+    "village": "Durban North Hub"
+  },
+  {
+    "id": "za-assignment-mk-4",
+    "campaignId": "mk-sovereignty-rally",
+    "campaignName": "MK: Sovereignty and People's Power Rally",
+    "ward": "Ward 5",
+    "constituency": "eThekwini",
+    "targetContacts": 1,
+    "completedContacts": 0,
+    "status": "Active",
+    "priority": "High",
+    "syncStatus": "Synced",
+    "routeName": "Durban City Grounds",
+    "village": "Durban North Hub"
+  }
+]

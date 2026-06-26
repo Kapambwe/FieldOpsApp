@@ -1,0 +1,68 @@
+[
+  {
+    "id": "anc-d2d-canvassing",
+    "name": "ANC: Door-to-Door Service Delivery Audit",
+    "objective": "Verify voter details and household satisfaction in Soweto.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "door_to_door",
+    "mainMessage": "ANC: Together we can do more. We are here to listen and resolve your service delivery concerns.",
+    "talkingPoints": [
+      "Housing: Verify status of RDP housing applications.",
+      "NHI: Educate on the benefits of the National Health Insurance.",
+      "Jobs: Discuss local internship and job opportunities for youth."
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "displayOrder": 1,
+        "prompt": "Are you satisfied with local waste removal?",
+        "questionType": "YesNo",
+        "isRequired": true
+      }
+    ],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "anc-village-gathering",
+    "name": "ANC: Community Gathering Drive",
+    "objective": "Engage community leaders and influencers in Ward 42.",
+    "status": "Active",
+    "campaignType": "Village",
+    "territoryMode": "village_to_village",
+    "mainMessage": "Defending Democracy: Building our communities together.",
+    "talkingPoints": [
+      "Community Safety: Strengthening neighborhood watch groups.",
+      "Land: Progress on communal land rights and titles."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "anc-megaphone-broad",
+    "name": "ANC: Gauteng Mega-Broadcast",
+    "objective": "Mass awareness of upcoming manifesto launches and policy shifts.",
+    "status": "Active",
+    "campaignType": "Broadcasting",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "Join the Movement: Tomorrow at Orlando Stadium for the People's Assembly. A better life for all!",
+    "talkingPoints": [],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "anc-rally-soweto",
+    "name": "ANC Soweto Peoples Rally",
+    "objective": "Demonstrate grassroots strength in Soweto and outline the 2026 Renewal Plan.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "ANC: Renewing the mandate for social justice and economic transformation.",
+    "talkingPoints": [
+      "NHI Implementation: Quality healthcare for all South Africans.",
+      "Social Grants: Protecting the most vulnerable through sustainable funding."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  }
+]

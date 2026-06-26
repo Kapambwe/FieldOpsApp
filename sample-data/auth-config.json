@@ -1,0 +1,165 @@
+{
+  "demoProfiles": [
+    {
+      "key": "zm-admin",
+      "label": "Zambia: UPND - Party Admin",
+      "country": "Zambia",
+      "party": "United Party for National Development",
+      "role": "Admin",
+      "username": "upnd.admin",
+      "password": "Admin123!",
+      "tenantId": "tenant-zm-upnd"
+    },
+    {
+      "key": "za-admin",
+      "label": "SA: ANC - Party Admin",
+      "country": "South Africa",
+      "party": "African National Congress",
+      "role": "Admin",
+      "username": "anc.admin",
+      "password": "Admin123!",
+      "tenantId": "tenant-za-anc"
+    },
+    {
+      "key": "zm-upnd",
+      "label": "Zambia: UPND - Field Canvasser",
+      "country": "Zambia",
+      "party": "United Party for National Development",
+      "role": "Canvasser",
+      "username": "upnd.agent",
+      "password": "Agent123!",
+      "tenantId": "tenant-zm-upnd"
+    },
+    {
+      "key": "zm-pf",
+      "label": "Zambia: PF - Opposition Agent",
+      "country": "Zambia",
+      "party": "Patriotic Front",
+      "role": "Canvasser",
+      "username": "pf.agent",
+      "password": "Agent123!",
+      "tenantId": "tenant-zm-pf"
+    },
+    {
+      "key": "zm-sp",
+      "label": "Zambia: Socialist Party - Field Mobilizer",
+      "country": "Zambia",
+      "party": "Socialist Party",
+      "role": "Canvasser",
+      "username": "socialist.agent",
+      "password": "Agent123!",
+      "tenantId": "tenant-zm-sp"
+    },
+    {
+      "key": "zm-cf",
+      "label": "Zambia: Citizen First - Grassroots Organizer",
+      "country": "Zambia",
+      "party": "Citizen First",
+      "role": "Canvasser",
+      "username": "citizen.agent",
+      "password": "Agent123!",
+      "tenantId": "tenant-zm-cf"
+    },
+    {
+      "key": "za-anc",
+      "label": "SA: ANC - Campaign Volunteer",
+      "country": "South Africa",
+      "party": "African National Congress",
+      "role": "Canvasser",
+      "username": "anc.agent",
+      "password": "Agent123!",
+      "tenantId": "tenant-za-anc"
+    },
+    {
+      "key": "za-da",
+      "label": "SA: DA - Field Coordinator",
+      "country": "South Africa",
+      "party": "Democratic Alliance",
+      "role": "Canvasser",
+      "username": "da.agent",
+      "password": "Agent123!",
+      "tenantId": "tenant-za-da"
+    },
+    {
+      "key": "za-eff",
+      "label": "SA: EFF - Ground Force Commander",
+      "country": "South Africa",
+      "party": "Economic Freedom Fighters",
+      "role": "Canvasser",
+      "username": "eff.agent",
+      "password": "Agent123!",
+      "tenantId": "tenant-za-eff"
+    },
+    {
+      "key": "za-mk",
+      "label": "SA: MK Party - Mobilization Officer",
+      "country": "South Africa",
+      "party": "uMkhonto weSizwe",
+      "role": "Canvasser",
+      "username": "mk.agent",
+      "password": "Agent123!",
+      "tenantId": "tenant-za-mk"
+    },
+    {
+      "key": "zambia-results",
+      "label": "Zambia - Result Capturer (UPND)",
+      "country": "Zambia",
+      "party": "United Party for National Development",
+      "role": "Poll Agent",
+      "username": "results.officer",
+      "password": "Agent123!",
+      "tenantId": "tenant-zm-upnd"
+    },
+    {
+      "key": "zm-ccmg-observer",
+      "label": "Zambia: CCMG - Poll Observer",
+      "country": "Zambia",
+      "party": "Christian Churches Monitoring Group",
+      "role": "Observer",
+      "username": "ccmg.observer",
+      "password": "Agent123!",
+      "tenantId": "tenant-zm-ccmg"
+    },
+    {
+      "key": "zm-eu-observer",
+      "label": "Zambia: EU - International Observer",
+      "country": "Zambia",
+      "party": "European Union Election Observation Mission",
+      "role": "Observer",
+      "username": "eu.observer",
+      "password": "Agent123!",
+      "tenantId": "tenant-zm-eu"
+    }
+  ],
+  "countryOptions": [
+    { "code": "Zambia", "text": "Zambia" },
+    { "code": "South Africa", "text": "South Africa" },
+    { "code": "Malawi", "text": "Malawi" },
+    { "code": "Kenya", "text": "Kenya" },
+    { "code": "Tanzania", "text": "Tanzania" },
+    { "code": "Zimbabwe", "text": "Zimbabwe" }
+  ],
+  "roleOptions": [
+    { "code": "Admin", "text": "Administrator" },
+    { "code": "Canvasser", "text": "Canvasser" },
+    { "code": "Poll Agent", "text": "Poll Agent" },
+    { "code": "Observer", "text": "Poll Observer" }
+  ],
+  "countryPartyOptions": {
+    "Zambia": [
+      { "code": "United Party for National Development", "text": "United Party for National Development (UPND)" },
+      { "code": "Patriotic Front", "text": "Patriotic Front (PF)" },
+      { "code": "Socialist Party", "text": "Socialist Party" },
+      { "code": "Citizen First", "text": "Citizen First" },
+      { "code": "Christian Churches Monitoring Group", "text": "Christian Churches Monitoring Group (CCMG)" },
+      { "code": "European Union Election Observation Mission", "text": "EU Election Observation Mission" }
+    ],
+    "South Africa": [
+      { "code": "African National Congress", "text": "African National Congress (ANC)" },
+      { "code": "Democratic Alliance", "text": "Democratic Alliance (DA)" },
+      { "code": "Economic Freedom Fighters", "text": "Economic Freedom Fighters (EFF)" },
+      { "code": "Action Communities Online", "text": "Action Communities Online (CSO)" },
+      { "code": "African Union Election Observation", "text": "African Union Election Observation" }
+    ]
+  }
+}

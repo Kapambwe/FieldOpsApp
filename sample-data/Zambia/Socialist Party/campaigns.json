@@ -1,0 +1,68 @@
+[
+  {
+    "id": "sp-d2d-outreach",
+    "name": "SP: Door-to-Door Justice Tour",
+    "objective": "Verify household living standards and discuss land redistribution.",
+    "status": "Active",
+    "campaignType": "Door-to-Door",
+    "territoryMode": "door_to_door",
+    "mainMessage": "Socialist Party: Justice, Equity and Peace. We are here to listen to the working class.",
+    "talkingPoints": [
+      "Land: Every family deserves a plot for shelter and farming.",
+      "Healthcare: Our plan for truly free healthcare at the point of need.",
+      "Equity: Ending the massive gap between the rich and the poor."
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "displayOrder": 1,
+        "prompt": "Do you own the land your house is built on?",
+        "questionType": "YesNo",
+        "isRequired": true
+      }
+    ],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "sp-village-council",
+    "name": "SP: Village Workers Council",
+    "objective": "Mobilize community workers and farmers around labor rights.",
+    "status": "Active",
+    "campaignType": "Village",
+    "territoryMode": "village_to_village",
+    "mainMessage": "Workers of Zambia Unite: Building a better future for our children.",
+    "talkingPoints": [
+      "Labor: Strengthening village-level farming cooperatives.",
+      "Education: Ensuring quality school access for all village children."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "sp-megaphone-broad",
+    "name": "SP: Munali Hub Broadcast",
+    "objective": "Mass awareness of upcoming workers' rights town halls.",
+    "status": "Active",
+    "campaignType": "Broadcasting",
+    "territoryMode": "street_by_street_megaphone",
+    "mainMessage": "SP: Join the People's Assembly! This Sunday at UNZA grounds. Your voice is your power!",
+    "talkingPoints": [],
+    "questions": [],
+    "syncStatus": "Synced"
+  },
+  {
+    "id": "sp-justice-rally",
+    "name": "SP: National Justice Rally",
+    "objective": "Mobilize support for the 2026 Manifesto and announce labor reforms.",
+    "status": "Active",
+    "campaignType": "Event",
+    "territoryMode": "mass_rally",
+    "mainMessage": "Socialist Party: Justice for the poor. Free healthcare and land rights for all workers.",
+    "talkingPoints": [
+      "Miners Rights: Nationalizing strategic mining interests.",
+      "Farmers: Guaranteed floor prices for all small-scale farmers."
+    ],
+    "questions": [],
+    "syncStatus": "Synced"
+  }
+]

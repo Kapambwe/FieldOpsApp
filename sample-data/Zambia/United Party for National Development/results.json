@@ -1,0 +1,37 @@
+[
+  {
+    "id": "sample-result-1",
+    "captureLocationType": "PollingStation",
+    "pollingStationId": 101,
+    "pollingStationName": "Kalingalinga Primary School",
+    "constituency": "Lusaka Central",
+    "ward": "Ward 15",
+    "registeredVoters": 850,
+    "validVotes": 620,
+    "rejectedVotes": 5,
+    "candidateVotes": [
+      {
+        "partyName": "United Party for National Development",
+        "candidateName": "Hakainde Hichilema",
+        "partyColor": "#ff0000",
+        "votes": 450
+      },
+      {
+        "partyName": "Patriotic Front",
+        "candidateName": "Edgar Lungu",
+        "partyColor": "#008000",
+        "votes": 150
+      },
+      {
+        "partyName": "Socialist Party",
+        "candidateName": "Fred M'membe",
+        "partyColor": "#ff0000",
+        "votes": 20
+      }
+    ],
+    "agentName": "Demo Agent",
+    "agentConfirmed": true,
+    "syncStatus": "Synced",
+    "recordedAt": "2026-05-23T10:00:00Z"
+  }
+]

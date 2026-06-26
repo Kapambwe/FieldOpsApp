@@ -1,0 +1,53 @@
+[
+  {
+    "id": "za-voter-eff-1",
+    "voterId": 3001001,
+    "firstName": "Thabo",
+    "lastName": "Molefe",
+    "phoneNumber": "+27 82 400 1001",
+    "address": "Soweto Block B, Jabulani Sector",
+    "village": "Jabulani Sector",
+    "street": "Koma Road",
+    "constituency": "Johannesburg",
+    "ward": "Ward 42",
+    "pollingStationName": "Soweto Community Center",
+    "supportLevel": "Strong Supporter",
+    "syncStatus": "Synced",
+    "latitude": -26.2550,
+    "longitude": 27.8550
+  },
+  {
+    "id": "za-voter-eff-2",
+    "voterId": 3001002,
+    "firstName": "Zanele",
+    "lastName": "Khumalo",
+    "phoneNumber": "+27 82 400 1002",
+    "address": "Braamfontein Loft, CBD North",
+    "village": "Braamfontein Hub",
+    "street": "Juta Street",
+    "constituency": "Johannesburg",
+    "ward": "Ward 60",
+    "pollingStationName": "Johannesburg Library",
+    "supportLevel": "Leaning Support",
+    "syncStatus": "Synced",
+    "latitude": -26.1950,
+    "longitude": 28.0350
+  },
+  {
+    "id": "za-voter-eff-3",
+    "voterId": 3001003,
+    "firstName": "Julius",
+    "lastName": "Malema",
+    "phoneNumber": "+27 82 400 1003",
+    "address": "House 1, Jabulani Sector",
+    "village": "Jabulani Sector",
+    "street": "Koma Road",
+    "constituency": "Johannesburg",
+    "ward": "Ward 42",
+    "pollingStationName": "Soweto Community Center",
+    "supportLevel": "Strong Supporter",
+    "syncStatus": "Synced",
+    "latitude": -26.2555,
+    "longitude": 27.8555
+  }
+]
