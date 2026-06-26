@@ -1,4 +1,4 @@
-/* Manifest version: 2k6mMh5y */
+/* Manifest version: 9IIauZ1F */
 self.importScripts('./service-worker-assets.js');
 self.addEventListener('install', event => event.waitUntil(onInstall(event)));
 self.addEventListener('activate', event => event.waitUntil(onActivate(event)));
