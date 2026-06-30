@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "aggregationCenter": "Ndola Tally Centre",
+    "constituency": "Ndola Central",
+    "ward": "Central",
+    "candidateSource": "Constituency Tally",
+    "publishedVersion": 1,
+    "status": "Draft",
+    "candidates": [
+      { "id": 1, "candidateName": "Jane Moyo", "partyCode": "UPND", "ballotOrder": 1, "displayColor": "#16a34a", "isWithdrawn": false },
+      { "id": 2, "candidateName": "Peter Zulu", "partyCode": "PF", "ballotOrder": 2, "displayColor": "#1d4ed8", "isWithdrawn": false }
+    ]
+  }
+]

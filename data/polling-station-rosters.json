@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "pollingStation": "Kanyama Primary School",
+    "constituency": "Kanyama",
+    "ward": "Kanyama",
+    "candidateSource": "Nomination Form",
+    "publishedVersion": 2,
+    "lastPublishedAt": "2026-05-16T09:00:00",
+    "status": "Published",
+    "candidates": [
+      { "id": 1, "candidateName": "Jane Moyo", "partyCode": "UPND", "ballotOrder": 1, "displayColor": "#16a34a", "isWithdrawn": false },
+      { "id": 2, "candidateName": "Peter Zulu", "partyCode": "PF", "ballotOrder": 2, "displayColor": "#1d4ed8", "isWithdrawn": false },
+      { "id": 3, "candidateName": "Blank / Spoilt", "partyCode": "UNK", "ballotOrder": 99, "displayColor": "#64748b", "isWithdrawn": true }
+    ]
+  },
+  {
+    "id": 2,
+    "pollingStation": "Matero Community Hall",
+    "constituency": "Matero",
+    "ward": "Matero",
+    "candidateSource": "Updated Nomination",
+    "publishedVersion": 1,
+    "status": "Draft",
+    "candidates": [
+      { "id": 1, "candidateName": "Grace Mwila", "partyCode": "UPND", "ballotOrder": 1, "displayColor": "#16a34a", "isWithdrawn": false },
+      { "id": 2, "candidateName": "Henry Banda", "partyCode": "PF", "ballotOrder": 2, "displayColor": "#1d4ed8", "isWithdrawn": false }
+    ]
+  }
+]
